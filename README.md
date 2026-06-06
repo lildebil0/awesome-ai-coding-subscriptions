@@ -1,10 +1,10 @@
 # Awesome AI Coding Subscriptions & APIs [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated, benchmarked list of the **best-value subscriptions and paid model-access plans for agentic coding** — what to actually *buy* to power Claude Code, Cursor, Cline, Aider, Roo/Kilo Code, OpenCode and friends, ranked by price ↔ power ↔ model count ↔ request limits ↔ integration.
+> Which subscription or paid API to put behind your coding agent (Claude Code, Cursor, Cline, Aider, Roo/Kilo, OpenCode). Ranked on price, power, model count, request limits, and how cleanly it plugs in.
 
-This list catalogs the **plans you pay for** (subscriptions, flat-rate coding plans, pay-as-you-go APIs, routers, free tiers) — **not** the coding tools themselves. The harness (Claude Code, Cline, Aider…) is free; it's only the *integration target*. The interesting question is which cheap backend you put behind it.
+This list covers the plans you pay for: subscriptions, flat-rate coding plans, pay-as-you-go APIs, routers, and free tiers. It does not cover the coding tools themselves. The harness (Claude Code, Cline, Aider) is free. What costs money is the model behind it, so that is what gets ranked here.
 
-**The one-line takeaway:** a $3–30/mo flat-rate plan from a Chinese open-weight lab (GLM / Kimi / DeepSeek / MiniMax / Qwen) pointed at a free CLI harness gets you ~78–80% SWE-bench coding for **7–15% of the price** of a $200 frontier subscription. Frontier subs still win the hardest 5–10% of tasks. Most pros in 2026 **stack both**: a frontier sub for hard reasoning + a cheap plan for high-volume agentic overflow.
+A $3–30/mo flat-rate plan from a Chinese open-weight lab (GLM, Kimi, DeepSeek, MiniMax, Qwen) pointed at a free CLI harness gets you around 78–80% on SWE-bench for roughly a tenth of what a $200 frontier subscription costs. The frontier subs still win the hardest tasks. So most people in 2026 run both: a frontier sub for the hard reasoning, a cheap plan for everything else.
 
 > ⚠️ **Pricing in this space changes monthly.** Numbers reflect **~June 2026**. Always confirm on the official page before buying. Corrections welcome — see [Contributing](#contributing).
 
@@ -14,8 +14,8 @@ This list catalogs the **plans you pay for** (subscriptions, flat-rate coding pl
 
 | Badge | Meaning |
 |-------|---------|
-| 💎 | **Hidden gem** — punches above its price / under-the-radar |
-| 🆓 | Has a genuinely usable **free tier** |
+| 💎 | **Hidden gem** — lesser-known, costs less than it should for what you get |
+| 🆓 | Has a **free tier** you can actually run an agent on |
 | ✅ | **Pricing fact-checked** against official source (June 2026) |
 | ⭐ | Value rating (1–5), price-vs-power-vs-limits-vs-integration |
 | 🇨🇳 | China-hosted (data-residency / latency caveat for some) |
@@ -166,7 +166,7 @@ Here the plan *is* the product — you buy into the vendor's editor/agent. The 2
 
 ## Flat-rate coding plans — the value champions 💎
 
-The heart of this list. Fixed monthly/quarterly plans that put a frontier-ish open-weight model behind your harness, mostly from Chinese labs — **almost all expose a native Anthropic endpoint**, so they're true Claude Code drop-ins via `ANTHROPIC_BASE_URL`. Canonical endpoint reference: [Alorse/cc-compatible-models](https://github.com/Alorse/cc-compatible-models).
+Fixed monthly or quarterly plans that put a frontier-ish open-weight model behind your harness, mostly from Chinese labs. Most expose a native Anthropic endpoint, so they drop into Claude Code via `ANTHROPIC_BASE_URL`. For the endpoint list, see [Alorse/cc-compatible-models](https://github.com/Alorse/cc-compatible-models).
 
 > Consensus pecking order: **GLM** (cheapest entry, community default) · **MiniMax** (best price/volume) · **Kimi** (best long-horizon agent) · **Qwen** (>262K context, multi-model). Claude Pro $20 is the quality benchmark they undercut.
 
@@ -275,7 +275,7 @@ One key across many providers. Pick a router as your **default access layer**.
 
 ## Free tiers 🆓
 
-Genuinely usable $0 access. **Consensus ranking** for real agent loops (June 2026):
+$0 access you can run a real agent loop on, ranked by what the community reports works (June 2026):
 
 1. **[Cerebras free](https://inference-docs.cerebras.ai/support/rate-limits)** 💎 — **1M tokens/day, no card, fastest** (2000+ tok/s), Qwen3-Coder-480B + GPT-OSS-120B. ⚠️ **8K context cap** kills whole-repo work. ⭐5
 2. **[Google AI Studio](https://ai.google.dev/gemini-api/docs/rate-limits)** — **biggest free context** (Flash up to 1M) + Gemma 3 27B at **14,400 RPD**. ⚠️ Gemini 2.5 Pro no longer free (~April 2026); limits slashed Dec 2025; free data used for training. ⭐4
@@ -284,13 +284,13 @@ Genuinely usable $0 access. **Consensus ranking** for real agent loops (June 202
 5. **[NVIDIA NIM](https://build.nvidia.com/)** 💎 — 1,000–5,000 credits, **no card/no expiry**, 40 RPM, frontier open models (MiniMax M2.x, Qwen3-Coder-480B, GLM-5, Kimi K2.5). Eval tier (credit-capped). ⭐4
 6. **Mistral Experiment** — 1B tokens/month (!), ~1 req/sec + training opt-in.
 - **Prototyping-only:** GitHub Models (50 RPD), Cloudflare Workers AI, Together ($1 default).
-- **Durable free strategy:** route 60–80% of agent traffic to free Qwen3-Coder/GPT-OSS/DeepSeek (Cerebras + OpenRouter+$10 + NVIDIA NIM); escalate the hard 20% to a paid frontier model. ⚠️ Free quotas tightened hard in 2025–2026 — assume any can shrink without notice.
+- **Durable free strategy:** route 60–80% of agent traffic to free Qwen3-Coder/GPT-OSS/DeepSeek (Cerebras + OpenRouter+$10 + NVIDIA NIM), then escalate the hard 20% to a paid frontier model. ⚠️ Free quotas tightened hard through 2025–2026, so assume any of them can shrink without notice.
 
 ---
 
 ## Niche & specialty
 
-- **[xAI Grok Code Fast 1 (API)](https://x.ai/news/grok-code-fast-1)** 💎 — `$0.20/$1.50/M` ($0.02 cached), 256K ctx, **OpenAI + Anthropic compat**. **#1 by usage on OpenRouter** — the textbook "good-enough + fast + cheap" implementer. $25 free signup credits; up to $175/mo via data-sharing. ⚠️ Over-edits without tight scope; escalate hard reasoning. ⭐5
+- **[xAI Grok Code Fast 1 (API)](https://x.ai/news/grok-code-fast-1)** 💎 — `$0.20/$1.50/M` ($0.02 cached), 256K ctx, **OpenAI + Anthropic compat**. **#1 by usage on OpenRouter.** Fast and cheap enough for routine implementation work. $25 free signup credits; up to $175/mo via data-sharing. ⚠️ Over-edits without tight scope, so escalate hard reasoning elsewhere. ⭐5
 - **[Mistral Le Chat Pro / Vibe](https://mistral.ai/pricing/)** 💎🆓🇪🇺 — `$14.99/mo` (**$5.99 student**). **Cheapest major coding sub**, includes the Vibe CLI terminal agent (Devstral 2). Free tier has real (limited) coding. ⭐4
 - **[Mistral Codestral / Devstral 2 (API)](https://mistral.ai/news/codestral-2501/)** 🇪🇺 — Codestral `$0.30/$0.90` (32K) with a **free FIM endpoint** (Continue.dev's go-to autocomplete); Devstral 2 `$0.40/$2.00`, Devstral Small **free**. EU sovereignty. ⭐4
 - **[Inception Mercury](https://www.inceptionlabs.ai/)** 💎 — diffusion dLLM, `$0.25/$0.75–1/M`, 128K, **5–10× faster** than Haiku/GPT-4o-mini, #1 speed on Copilot Arena small-model tier. Latency-sensitive autocomplete buy, not a frontier reasoner. ⭐4
@@ -356,7 +356,7 @@ SWE-bench Verified (mostly vendor-reported; treat as directional — contaminati
 | **Value 💎** | **GLM-5.1** | 77.8% | $10–30/mo plan |
 | Speed/cheap | Grok Code Fast 1 | 70.8% | $0.20/$1.50 per M |
 
-> **The value lane exists to approximate Claude Code at 7–15% of its price.** Pay $10–30/mo for a flat plan that hits ~78–80%, reserve $100–200 frontier subs for the top 5–10 benchmark points you genuinely need.
+> A $10–30/mo flat plan gets you to about 78–80%. The last 5–10 benchmark points cost $100–200/mo. Pay for them only when a task actually needs them.
 
 ---
 
@@ -364,12 +364,12 @@ SWE-bench Verified (mostly vendor-reported; treat as directional — contaminati
 
 Aggregated from r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor, r/Anthropic, Hacker News, and neutral blogs (patshead, InfoWorld, serenitiesai, vibecoding, verdent, every.to).
 
-- **#1 hidden gem & value pick:** **GLM Coding Plan** is the runaway favorite for "cheapest way to run Claude Code." "GLM-4.6 is ~80% as good as Claude Code for ~1/3 the price" gets quoted constantly.
-- **The flat-rate-beats-API math:** for Claude itself, subscriptions win at scale because 90%+ of Claude Code tokens are cache-reads (free on sub, billed on API). The viral example: a $5,623 API month = 4.5 years of Max 5x.
-- **The billing-nerf backlash:** Cursor (June 2025), GitHub Copilot (June 1 2026), Windsurf — all moved from request caps to usage credits. The loudest recurring complaint; Copilot's agentic bills jumped 10×–50× for power users.
-- **The cost-stacking meta:** keep a frontier sub for hard work + a cheap open-weight plan for overflow. Most-repeated stack: **Claude Pro $20 + GLM Lite $10**.
-- **"I canceled my $200 sub for X":** Factory's Droid is the notable concrete replacement story.
-- **Contrarian / scam-watch:** Cerebras Code took heat for "2000 TPS / no weekly limits" marketing vs hidden daily token caps; avoid sketchy reseller-proxy Claude/GPT keys; China-hosted plans flagged for data-privacy; watch GLM's quarterly-billing surprise. OpenRouter is the "one key for everything" default, but flat-rate plans beat it for heavy daily coders.
+- The most-recommended budget pick is the GLM Coding Plan, usually framed as the cheapest way to run Claude Code. The line people keep quoting: "GLM-4.6 is about 80% as good as Claude Code for a third of the price."
+- For Claude itself, a plan beats the API at any real volume, because most Claude Code tokens are cache-reads (free on a subscription, billed on the API). One often-cited month would have cost $5,623 on the API, which is 4.5 years of Max 5x.
+- The loudest running complaint is metering. Cursor (June 2025), GitHub Copilot (June 2026), and Windsurf all swapped request caps for usage credits, and Copilot's agentic bills jumped 10–50× for heavy users.
+- The common setup is to pair a frontier sub for hard work with a cheap open-weight plan for the overflow. The pair people name most often is Claude Pro at $20 plus GLM Lite at $10.
+- When someone posts "I canceled my $200 sub," they have usually moved to Factory's Droid.
+- On the skeptical side: Cerebras Code drew fire for advertising "2000 TPS / no weekly limits" while enforcing hidden daily token caps. People warn off sketchy reseller-proxy Claude keys, flag China-hosted plans on privacy, and get caught out by GLM's quarterly billing. OpenRouter stays the default "one key for everything," but flat-rate plans beat it for heavy daily use.
 
 ---
 
@@ -378,7 +378,7 @@ Aggregated from r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor, r/Anthropic
 - **Pricing volatility:** every number here can change within weeks. GLM doubled prices Feb 2026; Qwen Lite closed to new subs Mar 2026; Cerebras is perpetually sold out; Gemini 2.5 Pro stopped being free April 2026; models EOL constantly. **Confirm on the official page before buying.**
 - **Vendor benchmarks:** SWE-bench numbers are largely self-reported and contamination-prone. Treat as directional.
 - **Same model ≠ same quality:** an open-weight model performs differently across hosts (quantization + serving config). Test with short commitments; hedge across 2–3 plans.
-- **China-hosting:** GLM/Kimi/DeepSeek/MiniMax/Qwen are China-hosted — a data-residency consideration for sensitive/enterprise code. US-host alternatives: Synthetic.new, first-party US subs.
+- **China-hosting:** GLM/Kimi/DeepSeek/MiniMax/Qwen are China-hosted, which is a data-residency problem for sensitive or enterprise code. US-host alternatives: Synthetic.new, first-party US subs.
 - **ToS:** routing a consumer Claude/Copilot subscription into third-party tools, or using reseller relays, can violate provider ToS and risk an account ban. This list documents what exists; it doesn't endorse ToS violations.
 - Not affiliated with or endorsed by any listed vendor. No referral links.
 
