@@ -276,8 +276,8 @@ Fixed monthly or quarterly plans that put a frontier-ish open-weight model behin
 <a name="glm-coding-plan-zai"></a>
 ### GLM Coding Plan — Z.ai (Zhipu AI) 💎🇨🇳 ✅
 - **Overseas monthly (verified June 2026):** `Lite $18/mo` · `Pro $72/mo` · `Max $160/mo` — prices ~doubled on Apr 11 2026. **Quarterly Lite is the cheap route** (~$30/qtr ≈ $10/mo). Domestic CN is much cheaper (~$7 / $21 / $68 per mo). The viral **$3/mo** promo ended Feb 11 2026. ✅
-- Models: **GLM-5.1** (~94% of Opus 4.6 coding), GLM-5/5-Turbo, GLM-4.7, GLM-4.5-Air.
-- Limits: Lite ~80, Pro ~400, Max ~1,600 prompts/5h + weekly. ⚠️ **Peak-hour 3× multiplier** (14:00–18:00 UTC+8) on GLM-5/5.1 quietly halves throughput.
+- Models: **GLM-5.1** (~94% of Opus 4.6 coding) · GLM-5/5-Turbo · GLM-4.7 · GLM-4.5-Air. **Every tier (incl. Lite) gets all models and the full 200K context** (128K max output) — tiers differ only in quota, not models or context window. Suggested mapping: GLM-5.1 → Opus slot (hard tasks, frontend/UI), GLM-4.7 → Sonnet (the ×1-quota workhorse), GLM-4.5-Air → Haiku (fast background).
+- Limits: Lite ~80, Pro ~400, Max ~1,600 prompts/5h + weekly (one IDE "prompt" = 5–30 model calls). ⚠️ **Peak-hour 3× multiplier** on GLM-5/5.1 only, **14:00–18:00 UTC+8 (≈08:00–12:00 Kaliningrad)**; 2× off-peak (1× off-peak via promo through end-June 2026). Run heavy GLM-5.1 off-peak.
 - Integration: `ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic` — official Claude Code support + Cline/Roo/Kilo/OpenCode (20+ tools). **First-party** = no reseller ban risk.
 - > *The single most-recommended budget coding plan of 2026.* "3× Claude Max usage for ~$30/mo." Backlash over the Feb price hike + ⅓ quota cut, still rated top value. ⭐5
 - Sources: [z.ai/subscribe](https://z.ai/subscribe) · [pricing](https://docs.z.ai/guides/overview/pricing) · [GLM-5.1 review](https://serenitiesai.com/articles/glm-5-1-coding-plan-review-2026)
