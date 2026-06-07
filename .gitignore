@@ -9,3 +9,9 @@ desktop.ini
 # Node (for awesome-lint)
 node_modules/
 package-lock.json
+
+# tooling scratch / databases
+ruvector.db
+*.db
+_blocks/
+_digest.txt

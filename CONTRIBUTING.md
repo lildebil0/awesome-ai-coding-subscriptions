@@ -44,3 +44,18 @@ coding** — the thing you *pay for* to put an LLM behind a coding agent.
 
 Disagreements about value ratings are welcome — open an issue with your
 reasoning and benchmark/price evidence.
+
+## Translations
+
+Translations live in `i18n/README.<lang>.md` and are linked from the language
+bar at the top of every file.
+
+- Keep the structure identical to the English `README.md`: same headings, tables,
+  `<details>` blocks, and order.
+- Do **not** translate: URLs, code, env-var names, brand/product names, model IDs,
+  prices, or the emoji badges.
+- Regenerate the Contents anchors to match your translated headings.
+- The English `README.md` is the source of truth; when it changes, translations
+  may lag — that's fine, fixes welcome.
+- To add a new language, copy an existing translation, translate it, and add your
+  language to the nav bar in every file.
