@@ -54,6 +54,7 @@ Un plan de tarifa plana de $3–30/mes de un laboratorio chino de pesos abiertos
 - [Más proveedores que vale la pena conocer (2026)](#más-proveedores-que-vale-la-pena-conocer-2026)
 - [Niveles gratuitos 🆓](#niveles-gratuitos-)
 - [Créditos gratis y programas para estudiantes / startups](#créditos-gratis-y-programas-para-estudiantes--startups)
+- [Planes para estudiantes y educación 🎓](#planes-para-estudiantes-y-educación-)
 - [Nicho y especialidad](#nicho-y-especialidad)
 - [Constructores de apps y agentes autónomos](#constructores-de-apps-y-agentes-autónomos)
 - [Joyas ocultas y proxies de reventa ⚠️](#joyas-ocultas-y-proxies-de-reventa-)
@@ -120,7 +121,7 @@ Olvídate de la parálisis por análisis. Encuentra tu cifra mensual y llévate 
 | **< $10/mes** | **GLM Coding Plan Lite** 💎 ($30/trim ≈ $10/mes) | ~3× el uso de Claude Pro; un [endpoint nativo compatible con Anthropic](https://docs.z.ai/guides/overview/pricing) — encájalo en Claude Code, Cline u OpenCode | GLM Lite como tu driver de Claude Code + apila el nivel gratuito encima para el desbordamiento |
 | **~$10/mes** | **GitHub Copilot Pro** ($10) | Autocompletados ilimitados, $10 de AI Credits, modo agente, selector de modelos — pasó a [créditos por uso en junio de 2026](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/) | Copilot Pro en el IDE + GLM Lite en la terminal — dos drivers casi-frontier por ~$20 en total |
 | **~$20/mes** | **Claude Pro** ($20) *o* **Cursor Pro** ($20) | Pro: Claude Code en terminal/web/escritorio, [Sonnet 4.6 + Opus 4.6](https://claude.com/pricing). Cursor: Tab ilimitado + $20 de uso de agente + Background Agents | Claude Pro (el mejor agente puro) + Copilot Free para autocompletado en línea; o Cursor Pro a secas si vives en un solo editor |
-| **~$50/mes** | **Copilot Pro+** ($39) *o* **GLM Pro** ($90/trim ≈ $30) **+ Claude Pro** ($20) | Pro+: $39 en AI Credits + modelos top. La combinación: ~15× el uso de Claude Pro con GLM *más* calidad nativa de Anthropic para lo difícil | GLM Pro para el grindeo de alto volumen, Claude Pro reservado para el razonamiento delicado — el mejor $/rendimiento del tablero |
+| **~$50/mes** | **MiniMax Max** ($50) *o* **GLM Pro** (~$72/mes) **+ Claude Pro** ($20) | Un plan plano de alto volumen (MiniMax ~1000 prompts/5h, o GLM Pro) *más* calidad nativa de Anthropic para lo difícil | Plan barato para el grindeo, Claude Pro reservado para el razonamiento delicado — el mejor $/rendimiento del tablero |
 | **~$100/mes** | **Claude Max 5x** ($100) | 5× el uso de Pro, acceso prioritario a los modelos más nuevos — el punto dulce para devs que tocan los límites de Pro a diario ([plan Max](https://support.claude.com/en/articles/11049741-what-is-the-max-plan)) | Max 5x como caballo de batalla + GLM Lite ($10) como carril barato de desbordamiento cuando quemes el tope de 5x |
 | **~$200/mes** | **Claude Max 20x** ($200) *o* **Cursor Ultra** ($200) | Max 20x: 20× Pro, el nivel individual top. [Cursor Ultra](https://cursor.com/pricing): 20× de uso + funciones prioritarias en un IDE completo | Max 20x para usuarios avanzados de terminal; añade Copilot Pro ($10) solo si quieres los modelos de un segundo proveedor por variedad/redundancia |
 
@@ -169,9 +170,9 @@ Fuentes:
 
 | Caso de uso | Opción | Por qué | ~Precio |
 |----------|------|-----|--------|
-| 🏆 **Mejor valor general** | **GLM Coding Plan** 💎🇨🇳 | "3× el uso de Claude Max por ~$30/mes"; GLM-5.1 ~94% de la programación de Opus; Claude Code nativo | $10–30/mes |
+| 🏆 **Mejor valor general** | **GLM Coding Plan** 💎🇨🇳 | GLM-5.1 ~94% de la programación de Opus; Claude Code nativo; la entrada seria más barata | ~$10/mes (Lite trim.) – $72 Pro |
 | 🥇 **Mejor frontier puro** | **Claude Max 5x** | Desbloquea Opus en Claude Code, el agente #1 por consenso | $100/mes |
-| 🪙 **Entrada seria más barata** | **GLM Lite** / **Qwen Standard** / **Trae Lite** 💎 | Un backend de programación real desde ~$3–10/mes | $3–10/mes |
+| 🪙 **Entrada seria más barata** | **Trae Lite $3** / **StepFun $6.99** / **MiMo ~$5** / **GLM Lite ~$10** 💎 | Un backend de programación real por el precio de un café | $3–10/mes |
 | 💸 **Lo más barato por token** | **DeepSeek V4-Flash** 💎 | $0.14/M entrada, $0.0028/M cache-hit, 1M ctx, CC-native | pago por uso |
 | 🧪 **Mejor gratuito** | **Cerebras free** 🆓 + **OpenRouter :free** 🆓 | 1M tok/día (rápido) + Qwen3-Coder-480B gratis | $0 |
 | ⚡ **Mejor rápido+barato** | **Groq** 💎🆓 / **Cerebras Code** | Endpoint nativo de Anthropic (Groq); ~2000 tok/s de tarifa plana (Cerebras) | gratis / $50/mes |
@@ -189,7 +190,7 @@ Ordenada aproximadamente por valor. Precios ~junio de 2026; **verifica antes de 
 
 | Plan | Tipo | Precio | Modelos | Límites (programación) | Integración | ⭐ | Notas |
 |------|------|-------|--------|-----------------|-------------|----|-------|
-| [GLM Coding Plan](#glm-coding-plan--zai-zhipu-ai-) | tarifa plana | $10–30/mes (Lite/Pro, trim) | GLM-5.1/5/4.7 | Lite ~80, Pro ~400 prompts/5h | CC-native | ⭐5 | 💎🇨🇳✅ |
+| [GLM Coding Plan](#glm-coding-plan--zai-zhipu-ai-) | tarifa plana | Lite $18 · Pro $72 · Max $160 /mes (Lite trim. ~$10/mes) | GLM-5.1/5/4.7 | Lite ~80, Pro ~400 prompts/5h | CC-native | ⭐5 | 💎🇨🇳✅ |
 | [DeepSeek API](#deepseek-) | API pago por uso | V4-Pro $0.435/$0.87; Flash $0.14/$0.28 | V4-Pro/Flash | 1M ctx, 500–2500 concur | CC-native | ⭐5 | 💎🇨🇳✅ |
 | [MiniMax Coding Plan](#minimax-coding--token-plan-) | tarifa plana | $10–50/mes | M2.7 (plan), M2.5/M3 (API) | Starter ~100, Max ~1000 prompts/5h | CC-native | ⭐5 | 💎🇨🇳 |
 | [Kimi Code](#kimi-code--moonshot-ai-) | tarifa plana+API | ~$19/mes + medido | K2.6 (1T) | ~300–1200 llamadas/5h, 30 concur | CC-native | ⭐5 | 💎🇨🇳 |
@@ -236,10 +237,12 @@ Los planes directos del proveedor. Una suscripción autentica el **propio harnes
 - **[ChatGPT Pro](https://developers.openai.com/codex/pricing)** — `$100` (5x) / `$200` (20x). Alto rendimiento + GPU dedicada. Ojo: la promo "boost 10x" del nivel de $100 **expiró el 31 de mayo de 2026** (ahora 5x). El clásico debate "¿vale la pena el plan de $200?" = Claude Max 20x vs. ChatGPT Pro 20x. ⭐4
 
 ### Google (Gemini)
-- **[Gemini AI Pro / Ultra](https://gemini.google/subscriptions/)** — los créditos de GCP incluidos de Ultra ($40 a $100 / $100 a $200) compensan el coste de forma significativa si usas Google Cloud 💎. ⚠️ **Google va a matar la Gemini CLI de código abierto el 18 de junio de 2026**, forzando la migración a la Antigravity CLI cerrada con cuotas gratuitas mucho menores (~1000 → ~20 req/día) — la mayor queja de la comunidad en 2026.
+- **[Google AI Pro](https://gemini.google/subscriptions/)** — `$19.99/mes` (a menudo 50% off el primer año). Renombrado desde Google One AI Premium (abr 2026). Gemini 3.x Pro, 5 TB de almacenamiento y **acceso ampliado a los agentes de programación [Antigravity](#constructores-de-apps-y-agentes-autónomos) + Jules**. ✅
+- **[Google AI Ultra](https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/)** — **`$100/mes` (5x, nuevo nivel dev)** / **`$200/mes` (20x, recortado desde $250)** en I/O 2026. Uso 5×/20× en la app de Gemini **y** Antigravity; el nivel superior añade Deep Think, Project Genie, 30 TB. ✅
+- ⚠️ **Google va a matar la Gemini CLI de código abierto el 18 de junio de 2026**, migrando a los usuarios a la Antigravity CLI cerrada con cuotas gratuitas mucho menores (~1000 → ~20 req/día) — la mayor queja de la comunidad en 2026.
 
 ### xAI (Grok)
-- **[SuperGrok](https://x.ai/news/grok-code-fast-1)** — `$10` (Lite) / `$30` / `$300` (Heavy). La Grok Build CLI corre **8 subagentes en paralelo en git worktrees aislados** (novedoso). `grok-code-fast-1` tiene una base de seguidores fiel (barato+rápido) y fue gratis en muchos IDEs asociados. SWE-bench ~70,8% va por detrás de los líderes. **Para programar, compra la [API de xAI](#nicho-y-especialidad), no la suscripción de la app SuperGrok.** ⭐3 💎
+- **[SuperGrok](https://x.ai/pricing)** — `$30/mes` ($300/año) / Heavy `$300/mes`. (No hay un nivel "Lite" independiente en la página de precios actual — es un artefacto heredado/del paquete X-Premium; ignora las viejas cifras de $10.) La Grok Build CLI corre **8 subagentes en paralelo en git worktrees aislados** (novedoso) y se incluye en todas las suscripciones de SuperGrok. `grok-code-fast-1` tiene una base de seguidores fiel (barato+rápido). SWE-bench ~70,8% va por detrás de los líderes. **Para programar, la [API de xAI](#nicho-y-especialidad) suele ser la mejor compra.** ⭐3 💎
 
 
 ---
@@ -274,9 +277,9 @@ Planes fijos mensuales o trimestrales que ponen un modelo de pesos abiertos casi
 
 <a name="glm-coding-plan--zai-zhipu-ai-"></a>
 ### GLM Coding Plan — Z.ai (Zhipu AI) 💎🇨🇳 ✅
-- `Lite ~$10/mes ($30/trim)` · `Pro ~$30/mes ($90/trim)` · `Max ~$80/mes ($240/trim)`. Promo Q2-2026: $27/$81/$216/trim. (La viral promo de **$3/mes** terminó el 11 de febrero de 2026; el Lite anual a ~$7/mes es la ruta barata que queda.)
-- Modelos: **GLM-5.1** (~94% de la programación de Opus 4.6), GLM-5/5-Turbo, GLM-4.7, GLM-4.5-Air.
-- Límites: Lite ~80, Pro ~400, Max ~1.600 prompts/5h + semanal. ⚠️ **Multiplicador 3× en horas pico** (14:00–18:00 UTC+8) en GLM-5/5.1 que reduce discretamente el rendimiento a la mitad.
+- **Precio mensual internacional (verificado junio 2026):** `Lite $18/mes` · `Pro $72/mes` · `Max $160/mes` — los precios ~se duplicaron el 11 de abril de 2026. **El Lite trimestral es la ruta barata** (~$30/trim ≈ $10/mes). El precio doméstico en China es mucho más barato (~$7 / $21 / $68 al mes). La viral promo de **$3/mes** terminó el 11 de febrero de 2026. ✅
+- Modelos: **GLM-5.1** (~94% de la programación de Opus 4.6) · GLM-5/5-Turbo · GLM-4.7 · GLM-4.5-Air. **Todos los niveles (incl. Lite) reciben todos los modelos y el contexto completo de 200K** (128K de salida máx.) — los niveles solo difieren en cuota, no en modelos ni en ventana de contexto. Mapeo sugerido: GLM-5.1 → ranura de Opus (tareas difíciles, frontend/UI), GLM-4.7 → Sonnet (el caballo de batalla a ×1 cuota), GLM-4.5-Air → Haiku (fondo rápido).
+- Límites: Lite ~80, Pro ~400, Max ~1.600 prompts/5h + semanal (un "prompt" de IDE = 5–30 llamadas al modelo). ⚠️ **Multiplicador 3× en horas pico** solo en GLM-5/5.1, **14:00–18:00 UTC+8 (≈08:00–12:00 Kaliningrado)**; 2× fuera de pico (1× fuera de pico vía promo hasta fin de junio de 2026). Corre GLM-5.1 pesado fuera de pico.
 - Integración: `ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic` — soporte oficial de Claude Code + Cline/Roo/Kilo/OpenCode (20+ herramientas). **De primera mano** = sin riesgo de baneo por reventa.
 - > *El plan de programación económico más recomendado de 2026.* "3× el uso de Claude Max por ~$30/mes." Hubo reacción en contra por la subida de precio de febrero + el recorte de ⅓ de cuota, aun así sigue valorado como el mejor valor. ⭐5
 - Fuentes: [z.ai/subscribe](https://z.ai/subscribe) · [precios](https://docs.z.ai/guides/overview/pricing) · [reseña de GLM-5.1](https://serenitiesai.com/articles/glm-5-1-coding-plan-review-2026)
@@ -454,10 +457,7 @@ A menudo el "plan" más barato es uno para el que calificas. Estudiantes, manten
 
 ### Estudiantes 🎓
 
-- **[GitHub Student Developer Pack](https://education.github.com/pack)** + **Copilot Student** 🆓 — autocompletados ilimitados + asignación de AI-credits + 20 herramientas asociadas (incl. JetBrains). ⚠️ Desde marzo de 2026 es un plan dedicado "Copilot Student" (no Pro gratis), y **los nuevos registros se pausaron el 20 de abril de 2026** — los titulares existentes conservan el acceso. Verifica con un correo `.edu`.
-- **[Cursor for Students](https://cursor.com/students)** — **1 año gratis de Cursor Pro** (~$240) vía verificación `.edu` de SheerID. ⚠️ se renueva automáticamente a $20/mes tras el año.
-- **[JetBrains for students](https://www.jetbrains.com/academy/student-pack/)** — All Products Pack gratis + una prueba de JetBrains-AI; OpenAI ahora siembra créditos de Codex gratis a los usuarios de JetBrains.
-- **[Mistral Le Chat Pro — tarifa estudiante](https://mistral.ai/pricing/)** 💎 — ~**$7/mes** (vs $14.99), el plan estudiante más barato entre los laboratorios frontier occidentales.
+Los estudiantes obtienen el mayor pool gratuito de todos — tiene su propia sección detallada: **[Planes para estudiantes y educación 🎓](#planes-para-estudiantes-y-educación-)** (la tabla completa, la mecánica de verificación, las trampas y un stack de $0 si no puedes verificarte).
 
 ### Mantenedores de código abierto 🌱
 
@@ -484,6 +484,79 @@ A menudo el "plan" más barato es uno para el que calificas. Estudiantes, manten
 
 > La mayoría de los créditos de startup requieren una solicitud y (a menudo) financiación institucional. Lee la elegibilidad antes de contar con ellos — y recuerda que los créditos caducan (típicamente 12–24 meses).
 
+
+---
+
+## Planes para estudiantes y educación 🎓
+
+Los estudiantes pueden desbloquear miles de dólares de acceso frontier a la programación gratis — pero el mapa cambió mucho en 2026 (GitHub pausó los registros, el año gratis de Google terminó, Cursor se redujo a Norteamérica). Este es el estado real y actual a 7 de junio de 2026 — qué funciona de verdad, qué es una trampa y qué hacer si no puedes verificarte en absoluto.
+
+### El mapa
+
+| Proveedor | Oferta | Valor | Elegibilidad | Verificación | Truco |
+|---|---|---|---|---|---|
+| **GitHub Copilot** Student 🆓 | Plan gratuito *Copilot Student*: autocompletados ilimitados + 200 AI Credits/mes ([fuente](https://docs.github.com/copilot/how-tos/manage-your-account/free-access-with-copilot-student)) | ~$120/año vs Pro ($10/mes) | Matriculado 13+, programa de grado/diploma; revisado mensualmente | GitHub Education (correo escolar o prueba de matrícula con fecha) ([fuente](https://education.github.com/pack)) | ⚠️ **Nuevos registros PAUSADOS desde el 20 abr 2026** — puedes verificarte pero quedarte atascado en Copilot Free. Los modelos premium (Claude Opus/Sonnet, GPT-5.x-Codex) ya no se pueden seleccionar a mano — solo modo Auto ([fuente](https://github.com/orgs/community/discussions/189268)) |
+| **Cursor** 💎 | 1 año gratis de Cursor Pro ($20/mes de uso, modelos frontier, agente) ([fuente](https://cursor.com/students)) | ~$240 | Estudiante universitario, cuenta individual, **solo correo .edu** | SheerID vía panel; una vez por correo ([fuente](https://cursor.com/help/account-and-billing/student-discount)) | ⚠️ **Se renueva a $20/mes** tras el año 1. La página oficial dice "ubicado en Norteamérica"; **India fue eliminada del desplegable de países** ([fuente](https://forum.cursor.com/t/why-is-india-missing-from-the-country-dropdown-for-student-offers-on-cursor-ai/88955)). Sin .edu.au/.ac.uk en la ruta instantánea |
+| **JetBrains** Student Pack 🆓 | All Products Pack gratis — todos los IDE (IntelliJ Ultimate, PyCharm, etc.) + herramientas .NET ([fuente](https://www.jetbrains.com/academy/student-pack/)) | ~$289/año | Institución acreditada; programa de **>1 año** | Correo escolar, **tarjeta ISIC** o GitHub Student Pack (auto-concesión) | ⚠️ **Solo no comercial.** Re-verificación **anual**. IDE gratis ≠ IA gratis (ver fila siguiente). La opción de subir documento se eliminó en julio de 2024 |
+| **JetBrains AI** (para estudiantes) ⚠️ | AI Free ($0) + una **prueba de IA de 30 días** (agente Junie + IA en la nube) ([fuente](https://youtrack.jetbrains.com/articles/SUPPORT-A-2862)) | ~$10/mes de valor durante 30 días, luego ~$0 | Cualquier titular de licencia edu de JetBrains | Auto — clic en el icono de IA en el IDE v2025.1+ | ⚠️ **Sin IA gratis continua.** Tras la prueba: ~3 créditos de IA / 30 días (Junie los quema rápido). Sin descuento estudiante en AI Pro ($10)/Ultimate ($30). El autocompletado *local* ilimitado + modelos locales (Ollama) siguen gratis |
+| **Google AI Pro** (Gemini) ❌ | **CERRADO a nuevos registros.** Fue gratis 12–15 meses (Gemini Pro, NotebookLM Plus, 2TB→5TB, Antigravity, Jules) ([fuente](https://gemini.google/students/)) | Fue ~$240–$300; **$0 ahora** | N/D — terminó el 11 mar 2026 globalmente (EE. UU. final ~30 abr) | Era SheerID | ⚠️ La página oficial ahora dice *"la oferta terminó… ya no está disponible en tu región."* Ignora los blogs que aún dicen "gratis por un año". Quienes ya la canjearon conservan acceso hasta el fin del término. Nuevos usuarios: $19.99/mes de pago o solo el Gemini gratuito |
+| **OpenAI / ChatGPT** ⚠️ | **$100 en créditos de Codex** (2.500 créditos) para estudiantes — programación agéntica ([fuente](https://developers.openai.com/community/students)) | $100 de uso de Codex | Estudiantes universitarios de EE. UU./Canadá, **residentes en US/CA** | SheerID en la cuenta de ChatGPT | ⚠️ El Help Center dice que los créditos son **usables solo por usuarios Plus/Pro** — a Free/Go se les pide actualizar ([fuente](https://help.openai.com/en/articles/20001147-codex-credits-for-students-terms-of-service)). Así que de hecho necesita Plus ($20/mes). Los créditos caducan en 12 meses. La vieja promo de Plus gratis **terminó en mayo de 2025** |
+| **OpenAI ChatGPT Edu** 🆓 | ChatGPT provisto por la institución (Codex incluido) a $0 para ti ([fuente](https://openai.com/index/introducing-chatgpt-edu/)) | $0 si tu escuela lo tiene | Solo en universidades contratantes | SSO escolar — sin solicitud personal | ⚠️ Depende por completo de la escuela; la mayoría de estudiantes no lo tendrá. Confirma con IT si Codex está habilitado |
+| **Anthropic** Claude for Education 🆓 | Claude de nivel Pro para todo el campus (Opus/Sonnet, Projects, a veces Claude Code) a $0 ([fuente](https://www.anthropic.com/news/introducing-claude-for-education)) | ~$240/año de valor — **si tu escuela es socia** | Matriculado en una universidad socia (Northeastern, LSE, Syracuse, Columbia, etc.); inicia sesión con correo institucional | **Sin autoservicio** — auto-concedido cuando tu .edu es reconocido | ⚠️ **NO hay registro estudiante individual de Claude.** Si nada se actualiza al iniciar sesión con .edu, tu escuela no firmó — punto |
+| **Anthropic** Student Builders 🆓 | ~$50 en créditos de **API** de Claude para un proyecto de programación/investigación ([fuente](https://claude.com/programs/campus)) | ~$50 (+$5 por defecto) | Cualquier estudiante, correo .edu, proyecto académico (sin trabajo remunerado) | Solicitud en Anthropic Console (~5–7 días) | ⚠️ **Solo créditos de API** — no chat Pro, no suscripción a Claude Code. Se quema rápido con Opus. La vieja URL `/for-student-builders` ahora redirige — solicita vía Console |
+| **Anthropic** Pro/Max directo ❌ | **NINGUNO.** Sin descuento estudiante individual en Claude Pro/Max ([fuente](https://felloai.com/claude-student-discount/)) | $0 de ahorro estudiante | N/D | N/D | ⚠️ Las afirmaciones de "50% off / Pro a $10 para estudiantes" son **no oficiales/falsas**. El único ahorro real = facturación anual (~$17/mes, todos los usuarios). Evita los revendedores de cuentas compartidas (prohibidos por ToS) |
+| **Mistral** (Le Chat / Vibe) 💎 | **Plan educativo $5.99/mes** (vs $14.99 Pro) — incl. programación CLI/IDE todo el día + agente Devstral ([fuente](https://mistral.ai/pricing)) | ~60% off, ~$108 ahorrados | Educación superior acreditada, **a nivel mundial**; solo cuentas nuevas | **Correo institucional** auto-verificado (sin SheerID) — fallback manual | ⚠️ Tope duro de **12 meses**, luego $14.99. Solo cuentas nuevas (usuarios existentes bloqueados). "Le Chat"/"Vibe"/"Pro" = el mismo nivel |
+| **Perplexity** 💎 | **Education Pro $10/mes** (50% off) + 1 mes gratis; los referidos se acumulan hasta **24 meses gratis** ([fuente](https://shop.sheerid.com/offers/50-off-perplexity-pro-for-students-and-educators/)) | hasta ~$480 vía referidos | Estudiantes en escuelas soportadas por SheerID | SheerID | ⚠️ El viejo "1 año gratis con .edu" **caducó**. La fecha límite para acumular referidos fue el **31 may 2026** (ya pasó). Motor de investigación, **no un agente de programación** |
+| **Replit** ⚠️ | Estudiantes: 50% off Core = **$10/mes solo los primeros 6 meses**. Educadores: **gratis** + créditos para estudiantes ([fuente](https://replit.com/edu/students)) | Estudiante ~$90; Educador ~$240/año | Estudiante: correo .edu. Educador: instructor verificado | .edu al pagar / solicitud de educador | ⚠️ **No gratis, no continuo** — medio precio introductorio por 6 meses. Medido por créditos; el uso intenso del Agent genera excedentes |
+| **Windsurf** (→ Devin) ⚠️ | Pro gratis heredado para estudiantes — **estado incierto**. La marca se integra en Devin/Cognition; las URLs de estudiantes redirigen, los precios de Devin no muestran nivel estudiante ([fuente](https://devin.ai/pricing)) | "Posiblemente $0 si se honra, si no nada" | Heredado: .edu, acreditada | SheerID heredado en el editor | ⚠️ **Verifica en la app antes de confiar en ello** — los blogs de afiliados pueden estar desactualizados. En plena migración |
+| **Tabnine** ❌ | **Sin oferta estudiante, sin nivel gratuito.** Solo de pago ($39–$59/mes) ([fuente](https://www.tabnine.com/pricing/)) | Ninguno | N/D | N/D | ⚠️ Las viejas guías de "Pro gratis para estudiantes" están desactualizadas/muertas |
+| **Phind** ❌ | **Cerró el 16 ene 2026.** Difunto ([fuente](https://www.phind.com/plans)) | Ninguno | N/D | N/D | ⚠️ Algunos sitios de reseñas aún listan sus viejos precios — ya no existe |
+
+> Lectura rápida: **GitHub Copilot, JetBrains y Mistral** son los más accesibles globalmente (por documento/correo). **Cursor** es el mejor freebie individual (~$240) pero prioriza Norteamérica. El acceso estudiante de **Claude y OpenAI** está condicionado por la institución o requiere un plan de pago por debajo.
+
+### Cómo funciona la verificación
+
+Casi todas las ofertas de arriba pasan por uno de cuatro guardianes — apréndelos y dejarás de recibir rechazos:
+
+- **SheerID** (Cursor, Perplexity, OpenAI Codex, la vieja oferta de Google, Windsurf heredado). Dos etapas: una **comprobación instantánea** (nombre + escuela-del-desplegable + fecha de nacimiento + correo académico cotejados con bases de datos de matrícula), y una **subida de documento** como fallback si esa falla. Truco crítico: **SheerID lee la fecha de matrícula del documento, no la fecha de impresión** — una carta de admisión/aceptación (término futuro) es **rechazada**; un expediente que muestra un término *pasado* es rechazado. Necesitas un horario de clases del término actual, un recibo de matrícula, un expediente en curso o un carnet de estudiante con fecha, con tu **nombre + nombre de la escuela + una fecha del término actual visibles en una sola imagen**. Tres intentos fallidos te encierran en el lento soporte manual ([fuente](https://sheerid.zendesk.com/hc/en-us/articles/26408738570779-Student-Verification-FAQ)).
+- **GitHub Student Developer Pack** — la verificación de mayor apalancamiento: una aprobación cascada a Copilot Student gratis, JetBrains y más de 100 herramientas asociadas. Correo escolar o prueba con fecha; aprobación ~5 días. El estado dura hasta 2 años, luego re-verificas (el botón de renovar se desbloquea solo *tras* la expiración) ([fuente](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)).
+- **Correo .edu / institucional** — la vía rápida universal. Cuando se reconoce, convierte una revisión de varios días en una auto-aprobación de segundos. Un Gmail genérico nunca funciona. Cursor exige que el **correo de la cuenta y el correo de verificación sean idénticos**. JetBrains/GitHub usan la lista de dominios open-source [`swot`](https://github.com/JetBrains/swot) — puedes enviar el dominio de tu escuela ahí si no está reconocido.
+- **Tarjeta ISIC** (~€4–25) y **UNiDAYS** — respaldos. Saca una ISIC solo si SheerID/GitHub no reconocen tu escuela y careces de un correo institucional usable; JetBrains la acepta directamente.
+
+**Consejos para que te aprueben a la primera:** usa tu correo institucional y haz que el correo de la cuenta del proveedor sea *idéntico*; elige tu escuela del desplegable (no la escribas a mano); introduce nombre/fecha de nacimiento exactamente como en los registros de la escuela; sube una imagen clara, sin recortar y **sin editar** (los archivos con aspecto manipulado se rechazan automáticamente); un correo = una oferta.
+
+**Advertencias para bootcamps / online / secundaria:** SheerID y GitHub suelen querer instituciones acreditadas que otorguen grados o diplomas. **Los bootcamps califican para el GitHub Pack solo si su escuela se unió al GitHub Campus Program.** JetBrains exige explícitamente un programa de **más de un año**, lo que excluye a la mayoría de bootcamps cortos. Cursor rechaza por completo los dominios de secundaria y los dominios académicos no-.edu.
+
+### Mejor stack gratis si no puedes verificarte (o tienes $0)
+
+¿Sin .edu? ¿Región equivocada? ¿Sin tarjeta? Aún puedes montar una configuración de programación agéntica genuinamente capaz por **$0** — apuntando un harness gratis a endpoints de modelos gratis.
+
+**La columna vertebral — proveedores de modelos gratis (todos compatibles con OpenAI, sin tarjeta para empezar):**
+
+- 🆓 **OpenRouter** — una clave de API, ~27 modelos gratis (Qwen3-Coder con 1M de ctx, GLM-4.5-Air, gpt-oss-120b, Kimi K2.6). El tope gratis es de **50 peticiones/día**; una **recarga única de $10 lo sube permanentemente a 1000/día** (conservas el tope incluso tras gastar los $10). Global. ([fuente](https://openrouter.ai/docs/api/reference/limits))
+- 🆓 **ModelScope (Alibaba)** — el rey del volumen: **2.000 llamadas/día** entre más de 900 modelos incl. **Qwen3-Coder-480B**. Truco: debes vincular una cuenta de Alibaba Cloud (Aliyun), y la latencia está optimizada para CDN en China. ([fuente](https://github.com/QwenLM/qwen-code))
+- 🆓 **Google AI Studio** — Gemini 2.5 Flash gratis a **~1.500 RPD / hasta 1M TPM** — un gran *primario* gratis para lecturas de contexto grande. Pro está limitado a ~50/día. Los prompts del nivel gratis pueden entrenar los modelos de Google — nunca envíes secretos. ([fuente](https://ai.google.dev/gemini-api/docs/rate-limits))
+- 🆓 **Cerebras** (rápido: gpt-oss-120b, GLM-4.7, pero ~5 RPM) y **Groq** (modelos pequeños rápidos, pero ínfimos 6–12K TPM) — úsalos como **velocidad/fallback**, no como primario. ([Cerebras](https://inference-docs.cerebras.ai/support/rate-limits) · [Groq](https://console.groq.com/docs/rate-limits))
+- 🆓 **NVIDIA Build / NIM** (~40 RPM, modelos grandes) y **Cloudflare Workers AI** (10k Neurons/día — lo mejor para **embeddings gratis / RAG sobre tu base de código**). ([NVIDIA](https://build.nvidia.com/) · [Cloudflare](https://developers.cloudflare.com/workers-ai/platform/pricing/))
+
+**El harness (gratis, open-source):**
+
+- **Claude Code + [Claude-Code-Router](https://openrouter.ai/docs/cookbook/coding-agents/claude-code-integration) (ccr)** — consigue el flujo de Claude Code a $0 enrutándolo a través de los endpoints gratis de arriba. La pieza central.
+- **OpenCode** — habla de forma nativa con más de 75 proveedores (sin router), el menor consumo de tokens en benchmarks agénticos. Lo mejor para *mezclar* limpiamente proveedores gratis.
+- **Cline / Roo** (VS Code) y **Aider** (CLI, consciente de git) — pega cualquier clave gratis y a trabajar.
+
+> **Build de $0 recomendado:** ModelScope Qwen3-Coder-480B (volumen) como primario → OpenRouter GLM-4.5-Air / NVIDIA (fallback) → Cerebras/Groq (ráfagas de velocidad) → Cloudflare para embeddings, todo gobernado por **OpenCode** o **Claude Code vía ccr**. Para fiabilidad en tool-calling, prefiere modelos afinados para agentes (GLM-Air, Qwen3-Coder, gpt-oss-120b). Los niveles gratis de 50/día bastan para aprender; los 2000/día de ModelScope lo hacen un driver diario. Nunca envíes código propietario/secreto a las variantes de modelo `:free` — pueden registrar o entrenar con los prompts.
+
+### Trucos ⚠️
+
+- **Las pausas de registro son reales.** GitHub Copilot **pausó todos los nuevos registros de Pro/Pro+/Max *y* Student el 20 abr 2026** (costes de cómputo agéntico). Según el changelog del 1 de junio *sigue* pausado — los estudiantes recién verificados en junio de 2026 reciben el Pack pero aterrizan en Copilot Free. Los estudiantes que activaron **antes del 20 abr** conservan el acceso ([fuente](https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/)).
+- **Trampas de renovación automática.** Cursor se renueva a **$20/mes** tras el año gratis; Replit vuelve al Core completo tras **6 meses**; la vieja oferta de Google se auto-convierte a **$19.99/mes**. Pon un recordatorio en el calendario el día que actives.
+- **Ofertas solo-EE.UU. / bloqueadas por región.** Cursor es oficialmente "Norteamérica" y **eliminó India del desplegable**; los $100 de Codex de OpenAI son **solo residentes de US/Canadá**; Claude for Education está condicionado a escuelas socias (muy US/UK). Las ofertas por correo/documento (**GitHub, JetBrains, Mistral**) son mucho más fiables en India, SEA, LatAm y África.
+- **Degradaciones de modelo en niveles estudiante.** Desde el **12 mar 2026**, Copilot Student ya no puede seleccionar por sí mismo Claude Opus/Sonnet ni GPT-5.x-Codex — solo los alcanzas indirectamente vía modo Auto (Haiku por defecto). El valor titular ahora es el *autocompletado ilimitado*, no el chat con modelos premium.
+- **"Gratis" a menudo significa "descuento" o "créditos".** Mistral/Perplexity/Replit/Windsurf son *descuentos*; OpenAI Codex y Anthropic Student Builders son *concesiones de créditos* (y Codex probablemente necesita un plan Plus de pago por debajo para gastarlos). El pack gratis de JetBrains cubre los **IDE, no la IA continua**.
+- **Caducidad y re-verificación.** GitHub re-verifica hasta ~2 años; JetBrains y la mayoría de ofertas SheerID son **anuales**; Copilot Student revisa **mensualmente**. Un correo .edu de graduado que muere puede romper renovaciones en silencio — mantén la prueba de matrícula al día.
+- **Muerto/difunto, ignora el spam de SEO.** El año gratis de Google (terminó el 11 mar 2026), la promo de Plus gratis de OpenAI (terminó en mayo de 2025), el trato estudiante de Tabnine y **Phind** (cerró el 16 ene 2026) se acabaron — muchos blogs de afiliados aún los anuncian. **No** existe descuento estudiante individual oficial para Claude Pro/Max; trata cualquier "código de estudiante" para ello como falso.
+- **Fricción de pago.** Existen rutas sin tarjeta (GitHub, JetBrains, Mistral, Perplexity, la tarifa estudiante de Google) — lo mejor si no tienes tarjeta. En India, vigila un cargo de autorización temporal de ~₹2 que se reembolsa en 24–48h. La edad mínima suele ser 16 (18 en India).
 
 ---
 
