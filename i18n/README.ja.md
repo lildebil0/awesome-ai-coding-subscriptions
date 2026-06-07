@@ -54,6 +54,7 @@
 - [知っておく価値のあるその他プロバイダ(2026)](#知っておく価値のあるその他プロバイダ2026)
 - [無料枠 🆓](#無料枠-)
 - [無料クレジット & 学生 / スタートアッププログラム](#無料クレジット--学生--スタートアッププログラム)
+- [学生 & 教育プラン 🎓](#学生--教育プラン-)
 - [ニッチ & 専門](#ニッチ--専門)
 - [アプリビルダー & 自律エージェント](#アプリビルダー--自律エージェント)
 - [隠れた逸品 & リセラープロキシ ⚠️](#隠れた逸品--リセラープロキシ-)
@@ -120,7 +121,7 @@ flowchart TD
 | **< $10/月** | **GLM Coding Plan Lite** 💎($30/四半期 ≈ $10/月) | Claude Proの約3倍の使用量、[ネイティブAnthropic互換エンドポイント](https://docs.z.ai/guides/overview/pricing) — Claude Code、Cline、OpenCodeにドロップイン | GLM LiteをClaude Codeのドライバにし、溢れた分のオーバーフロー用に無料枠を上乗せ |
 | **~$10/月** | **GitHub Copilot Pro**($10) | 無制限補完、$10分のAIクレジット、エージェントモード、モデルピッカー — [2026年6月から従量制クレジットに移行](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/) | IDE内にCopilot Pro + ターミナルにGLM Lite — 合計約$20でフロンティア級のドライバ2本 |
 | **~$20/月** | **Claude Pro**($20) *または* **Cursor Pro**($20) | Pro:ターミナル/Web/デスクトップでClaude Code、[Sonnet 4.6 + Opus 4.6](https://claude.com/pricing)。Cursor:無制限Tab + $20分のエージェント使用 + バックグラウンドエージェント | Claude Pro(最良の素のエージェント)+ インライン補完にCopilot Free。あるいは1つのエディタに住んでいるならCursor Pro単体 |
-| **~$50/月** | **Copilot Pro+**($39) *または* **GLM Pro**($90/四半期 ≈ $30)**+ Claude Pro**($20) | Pro+:$39分のAIクレジット + トップモデル。組み合わせ:GLMでClaude Proの約15倍の使用量 *かつ* 難所にはネイティブAnthropic品質 | 大量の作業にGLM Pro、厄介な推論用にClaude Proを温存 — 表中で最良の $/スループット |
+| **~$50/月** | **MiniMax Max**($50) *または* **GLM Pro**(~$72/月)**+ Claude Pro**($20) | 大量処理向けの定額プラン(MiniMax ~1000 プロンプト/5h、またはGLM Pro)*かつ* 難所にはネイティブAnthropic品質 | 力仕事は安価プラン、厄介な推論用にClaude Proを温存 — 表中で最良の $/スループット |
 | **~$100/月** | **Claude Max 5x**($100) | Proの5倍の使用量、最新モデルへの優先アクセス — 毎日Pro制限に当たる開発者にとってのスイートスポット([Maxプラン](https://support.claude.com/en/articles/11049741-what-is-the-max-plan)) | 主力としてMax 5x + 5x上限を使い切ったときの安価なオーバーフローレーンにGLM Lite($10) |
 | **~$200/月** | **Claude Max 20x**($200) *または* **Cursor Ultra**($200) | Max 20x:Proの20倍、個人向け最上位ティア。[Cursor Ultra](https://cursor.com/pricing):20倍の使用量 + フルIDE内の優先機能 | ターミナル中心のパワーユーザーにMax 20x。多様性/冗長性のために別ベンダーのモデルが欲しければCopilot Pro($10)だけ追加 |
 
@@ -169,9 +170,9 @@ flowchart TD
 
 | ユースケース | ピック | 理由 | ~価格 |
 |----------|------|-----|--------|
-| 🏆 **総合コスパ最良** | **GLM Coding Plan** 💎🇨🇳 | 「約$30/月でClaude Maxの3倍の使用量」、GLM-5.1はOpusのコーディングの約94%、ネイティブClaude Code | $10〜30/月 |
+| 🏆 **総合コスパ最良** | **GLM Coding Plan** 💎🇨🇳 | GLM-5.1はOpusのコーディングの約94%、ネイティブClaude Code、最安の本格入門 | ~$10/月(四半期Lite)〜 $72 Pro |
 | 🥇 **素のフロンティア最良** | **Claude Max 5x** | Claude CodeでOpusを解放、コンセンサス第1位のエージェント | $100/月 |
-| 🪙 **本格入門の最安** | **GLM Lite** / **Qwen Standard** / **Trae Lite** 💎 | 約$3〜10/月から本物のコーディングバックエンド | $3〜10/月 |
+| 🪙 **本格入門の最安** | **Trae Lite $3** / **StepFun $6.99** / **MiMo ~$5** / **GLM Lite ~$10** 💎 | コーヒー1杯の値段で本物のコーディングバックエンド | $3〜10/月 |
 | 💸 **トークンあたり最安** | **DeepSeek V4-Flash** 💎 | 入力$0.14/M、キャッシュヒット$0.0028/M、1Mコンテキスト、CC-native | 従量 |
 | 🧪 **無料最良** | **Cerebras無料** 🆓 + **OpenRouter :free** 🆓 | 1Mトークン/日(高速)+ Qwen3-Coder-480B無料 | $0 |
 | ⚡ **速くて安い最良** | **Groq** 💎🆓 / **Cerebras Code** | ネイティブAnthropicエンドポイント(Groq)、約2000 tok/sの定額(Cerebras) | 無料 / $50/月 |
@@ -189,7 +190,7 @@ flowchart TD
 
 | プラン | 種別 | 価格 | モデル | 制限(コーディング) | 統合 | ⭐ | 備考 |
 |------|------|-------|--------|-----------------|-------------|----|-------|
-| [GLM Coding Plan](#glm-coding-plan--zai-zhipu-ai-) | 定額 | $10〜30/月(Lite/Pro、四半期) | GLM-5.1/5/4.7 | Lite ~80、Pro ~400 プロンプト/5h | CC-native | ⭐5 | 💎🇨🇳✅ |
+| [GLM Coding Plan](#glm-coding-plan--zai-zhipu-ai-) | 定額 | Lite $18 · Pro $72 · Max $160 /月(四半期Lite ~$10/月) | GLM-5.1/5/4.7 | Lite ~80、Pro ~400 プロンプト/5h | CC-native | ⭐5 | 💎🇨🇳✅ |
 | [DeepSeek API](#deepseek-) | 従量API | V4-Pro $0.435/$0.87、Flash $0.14/$0.28 | V4-Pro/Flash | 1Mコンテキスト、500〜2500同時 | CC-native | ⭐5 | 💎🇨🇳✅ |
 | [MiniMax Coding Plan](#minimax-coding--token-plan-) | 定額 | $10〜50/月 | M2.7(プラン)、M2.5/M3(API) | Starter ~100、Max ~1000 プロンプト/5h | CC-native | ⭐5 | 💎🇨🇳 |
 | [Kimi Code](#kimi-code--moonshot-ai-) | 定額+API | ~$19/月 + 従量 | K2.6(1T) | ~300〜1200 呼び出し/5h、30同時 | CC-native | ⭐5 | 💎🇨🇳 |
@@ -236,10 +237,12 @@ flowchart TD
 - **[ChatGPT Pro](https://developers.openai.com/codex/pricing)** — `$100`(5x)/ `$200`(20x)。高スループット + 専用GPU。注意:$100ティアの「10x ブースト」プロモは **2026年5月31日に終了**(現在は5x)。古典的な「$200プランは価値ある?」論争 = Claude Max 20x vs ChatGPT Pro 20x。⭐4
 
 ### Google(Gemini)
-- **[Gemini AI Pro / Ultra](https://gemini.google/subscriptions/)** — UltraにバンドルされるGCPクレジット($100で$40 / $200で$100)はGoogle Cloudを使うならコストを実質的に相殺 💎。⚠️ **Googleは2026年6月18日にオープンソースのGemini CLIを廃止し**、無料枠がはるかに少ないクローズドなAntigravity CLIへの移行を強制(~1000 → ~20 req/日) — 2026年最大のコミュニティの不満。
+- **[Google AI Pro](https://gemini.google/subscriptions/)** — `$19.99/月`(初年度はしばしば50%off)。Google One AI Premiumから改称(2026年4月)。Gemini 3.x Pro、5TBストレージ、そして **強化された [Antigravity](#アプリビルダー--自律エージェント) + Jules** のコーディングエージェントアクセス。✅
+- **[Google AI Ultra](https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/)** — I/O 2026で **`$100/月`(5x、新dev層)** / **`$200/月`(20x、$250から値下げ)**。Geminiアプリ **と** Antigravityで5×/20×の使用量、最上位はDeep Think、Project Genie、30TBを追加。✅
+- ⚠️ **Googleは2026年6月18日にオープンソースのGemini CLIを廃止し**、無料枠がはるかに少ないクローズドなAntigravity CLIへユーザーを移行(~1000 → ~20 req/日) — 2026年最大のコミュニティの不満。
 
 ### xAI(Grok)
-- **[SuperGrok](https://x.ai/news/grok-code-fast-1)** — `$10`(Lite)/ `$30` / `$300`(Heavy)。Grok Build CLIは **8個の並列サブエージェントを隔離されたgit worktreeで実行**(斬新)。`grok-code-fast-1` はカルト的な人気(安くて速い)で、多くのパートナーIDEで無料だった。SWE-bench約70.8%でリーダーには及ばない。**コーディング用には SuperGrokアプリのサブではなく [xAI API](#xaigrok) を買うこと。** ⭐3 💎
+- **[SuperGrok](https://x.ai/pricing)** — `$30/月`($300/年)/ Heavy `$300/月`。(現行の価格ページに独立した「Lite」層はない — レガシー/X-Premiumバンドルの名残。古い$10の数字は無視。)Grok Build CLIは **8個の並列サブエージェントを隔離されたgit worktreeで実行**(斬新)、全SuperGrokサブに含まれる。`grok-code-fast-1` はカルト的な人気(安くて速い)。SWE-bench約70.8%でリーダーには及ばない。**コーディング用には [xAI API](#xaigrok) のほうが買い得なことが多い。** ⭐3 💎
 
 
 ---
@@ -274,9 +277,9 @@ flowchart TD
 
 <a name="glm-coding-plan-zai"></a>
 ### GLM Coding Plan — Z.ai(Zhipu AI)💎🇨🇳 ✅
-- `Lite ~$10/月($30/四半期)` · `Pro ~$30/月($90/四半期)` · `Max ~$80/月($240/四半期)`。2026年Q2プロモ:$27/$81/$216/四半期。(バズった **$3/月** プロモは2026年2月11日に終了。年額Lite約$7/月が残る安価ルート。)
-- モデル:**GLM-5.1**(Opus 4.6コーディングの約94%)、GLM-5/5-Turbo、GLM-4.7、GLM-4.5-Air。
-- 制限:Lite ~80、Pro ~400、Max ~1,600 プロンプト/5h + 週次。⚠️ GLM-5/5.1には **ピーク時3倍乗数**(14:00〜18:00 UTC+8)があり、スループットをひそかに半減させる。
+- **海外の月額(2026年6月検証):** `Lite $18/月` · `Pro $72/月` · `Max $160/月` — 価格は2026年4月11日に約2倍に。**四半期Liteが安価ルート**(~$30/四半期 ≈ $10/月)。中国国内価格はずっと安い(~$7 / $21 / $68 /月)。バズった **$3/月** プロモは2026年2月11日に終了。✅
+- モデル:**GLM-5.1**(Opus 4.6コーディングの約94%)· GLM-5/5-Turbo · GLM-4.7 · GLM-4.5-Air。**すべての層(Liteを含む)が全モデルと完全な200Kコンテキストを利用可能**(最大出力128K)— 層が違うのはクォータだけで、モデルやコンテキスト窓は同じ。推奨マッピング:GLM-5.1 → Opus枠(難タスク、フロントエンド/UI)、GLM-4.7 → Sonnet(×1クォータの主力)、GLM-4.5-Air → Haiku(高速バックグラウンド)。
+- 制限:Lite ~80、Pro ~400、Max ~1,600 プロンプト/5h + 週次(IDEの「1プロンプト」= モデル呼び出し5〜30回)。⚠️ GLM-5/5.1のみ **ピーク時3倍乗数**、**14:00〜18:00 UTC+8(≈08:00〜12:00 カリーニングラード)**、オフピークは2×(2026年6月末までのプロモでオフピーク1×)。重いGLM-5.1はオフピークに回すこと。
 - 統合:`ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic` — 公式Claude Codeサポート + Cline/Roo/Kilo/OpenCode(20以上のツール)。**一次提供** = リセラーBANリスクなし。
 - > *2026年で最も推薦された予算コーディングプラン。* 「約$30/月でClaude Maxの3倍の使用量」。2月の値上げ + クォータ⅓削減への反発はあるが、依然トップ価値評価。⭐5
 - 出典:[z.ai/subscribe](https://z.ai/subscribe) · [価格](https://docs.z.ai/guides/overview/pricing) · [GLM-5.1レビュー](https://serenitiesai.com/articles/glm-5-1-coding-plan-review-2026)
@@ -452,10 +455,7 @@ flowchart TD
 
 ### 学生 🎓
 
-- **[GitHub Student Developer Pack](https://education.github.com/pack)** + **Copilot Student** 🆓 — 無制限補完 + AIクレジット枠 + 20のパートナーツール(JetBrains含む)。⚠️ 2026年3月以降は専用の「Copilot Student」プラン(無料Proではない)で、**新規登録は2026年4月20日に停止** — 既存保有者はアクセス維持。`.edu` メールで認証。
-- **[Cursor for Students](https://cursor.com/students)** — SheerIDの `.edu` 認証で **Cursor Pro 1年無料**(約$240)。⚠️ 1年後に$20/月で自動更新。
-- **[JetBrains 学生向け](https://www.jetbrains.com/academy/student-pack/)** — 無料のAll Products Pack + JetBrains-AIトライアル。OpenAIは今やJetBrainsユーザーに無料Codexクレジットを配布。
-- **[Mistral Le Chat Pro — 学生レート](https://mistral.ai/pricing/)** 💎 — ~**$7/月**($14.99に対して)、西側フロンティアラボの中で最安の学生プラン。
+学生は全プランの中で最大の無料プールを得られます — 専用の詳細セクションがあります:**[学生 & 教育プラン 🎓](#学生--教育プラン-)**(完全な表、認証の仕組み、落とし穴、そして認証できない場合の$0スタック)。
 
 ### オープンソースメンテナ 🌱
 
@@ -482,6 +482,79 @@ flowchart TD
 
 > ほとんどのスタートアップクレジットは申請と(多くの場合)機関的な資金調達を要する。当てにする前に資格要件を読むこと — そしてクレジットは失効する(通常12〜24か月)のを忘れずに。
 
+
+---
+
+## 学生 & 教育プラン 🎓
+
+学生は数千ドル分のフロンティアコーディングアクセスを無料で解放できます — ただし2026年に状況は大きく変わりました(GitHubは登録を停止、Googleの無料1年は終了、Cursorは北米中心に縮小)。これは2026年6月7日時点の実際の最新状況です — 本当に使えるもの、罠、そしてまったく認証できない場合にどうするか。
+
+### 全体マップ
+
+| ベンダー | オファー | 価値 | 対象 | 認証 | 落とし穴 |
+|---|---|---|---|---|---|
+| **GitHub Copilot** Student 🆓 | 無料の *Copilot Student* プラン:無制限補完 + 月200 AIクレジット([出典](https://docs.github.com/copilot/how-tos/manage-your-account/free-access-with-copilot-student)) | ~$120/年(Pro $10/月比) | 13歳以上の在学生、学位/ディプロマ課程、毎月再確認 | GitHub Education(学校メールまたは日付入りの在籍証明)([出典](https://education.github.com/pack)) | ⚠️ **新規登録は2026年4月20日以降停止中** — 認証できてもCopilot Freeのまま足止めされうる。プレミアムモデル(Claude Opus/Sonnet、GPT-5.x-Codex)は手動選択不可 — Autoモードのみ([出典](https://github.com/orgs/community/discussions/189268)) |
+| **Cursor** 💎 | Cursor Pro 1年無料($20/月分の使用、フロンティアモデル、エージェント)([出典](https://cursor.com/students)) | ~$240 | 大学生、個人アカウント、**.eduメールのみ** | ダッシュボード経由のSheerID、メール1つにつき1回([出典](https://cursor.com/help/account-and-billing/student-discount)) | ⚠️ 1年後に **$20/月で自動更新**。公式ヘルプは「北米在住」と記載、**Cursorの学生オファーの国ドロップダウンからインドが削除**([出典](https://forum.cursor.com/t/why-is-india-missing-from-the-country-dropdown-for-student-offers-on-cursor-ai/88955))。即時パスに.edu.au/.ac.ukなし |
+| **JetBrains** Student Pack 🆓 | 無料All Products Pack — 全IDE(IntelliJ Ultimate、PyCharmなど)+ .NETツール([出典](https://www.jetbrains.com/academy/student-pack/)) | ~$289/年 | 認定機関、**1年超**の課程 | 学校メール、**ISICカード**、またはGitHub Student Pack(自動付与) | ⚠️ **非商用のみ。** **毎年**再認証。無料IDE ≠ 無料AI(次行参照)。書類アップロード方式は2024年7月に廃止 |
+| **JetBrains AI**(学生向け)⚠️ | AI Free($0)+ 1回の **30日AIトライアル**(Junieエージェント + クラウドAI)([出典](https://youtrack.jetbrains.com/articles/SUPPORT-A-2862)) | 30日間~$10/月相当、以後~$0 | JetBrains教育ライセンス保有者なら誰でも | 自動 — IDE v2025.1+のAIアイコンをクリック | ⚠️ **継続的な無料AIはなし。** トライアル後:30日あたり~3 AIクレジット(Junieはこれを速く消費)。AI Pro($10)/Ultimate($30)に学生割引なし。無制限の *ローカル* 補完 + ローカルモデル(Ollama)は無料のまま |
+| **Google AI Pro**(Gemini)❌ | **新規登録は終了。** 12〜15か月無料だった(Gemini Pro、NotebookLM Plus、2TB→5TB、Antigravity、Jules)([出典](https://gemini.google/students/)) | かつて~$240〜$300、**現在$0** | 該当なし — 2026年3月11日に世界で終了(米国最終~4月30日) | かつてはSheerID | ⚠️ 公式ページは現在 *「オファーは終了…お住まいの地域では利用不可」* と表示。「1年無料」と言うブログは無視。既に登録済みの人は期間終了まで維持。新規:有料$19.99/月か無料Geminiのみ |
+| **OpenAI / ChatGPT** ⚠️ | 学生向け **Codex $100クレジット**(2,500クレジット)— エージェントコーディング([出典](https://developers.openai.com/community/students)) | Codex利用$100分 | 米国/カナダの大学生、**US/CA居住** | ChatGPTアカウント上のSheerID | ⚠️ ヘルプセンターはクレジットが **Plus/Proユーザーのみ利用可** と明記 — Free/Goはアップグレードを促される([出典](https://help.openai.com/en/articles/20001147-codex-credits-for-students-terms-of-service))。事実上Plus($20/月)が必要。クレジットは12か月で失効。旧Plus無料プロモは **2025年5月に終了** |
+| **OpenAI ChatGPT Edu** 🆓 | 機関提供のChatGPT(Codex込み)が$0で利用可([出典](https://openai.com/index/introducing-chatgpt-edu/)) | 学校が導入していれば$0 | 契約大学のみ | 学校のSSO — 個人申請なし | ⚠️ 完全に学校依存、大半の学生は未提供。Codexが有効かIT部門に確認 |
+| **Anthropic** Claude for Education 🆓 | キャンパス全体のProティアClaude(Opus/Sonnet、Projects、時にClaude Code)が$0([出典](https://www.anthropic.com/news/introducing-claude-for-education)) | ~$240/年相当 — **学校がパートナーなら** | パートナー大学(Northeastern、LSE、Syracuse、Columbiaなど)に在籍、機関メールでログイン | **セルフサービスなし** — .edu認識時に自動付与 | ⚠️ **個人の学生向けClaude登録は存在しない。** .eduログインで何もアップグレードされなければ、学校が未契約というだけ |
+| **Anthropic** Student Builders 🆓 | コーディング/研究プロジェクト向けにClaude **API**クレジット~$50([出典](https://claude.com/programs/campus)) | ~$50(既定$5) | 学生なら誰でも、.eduメール、学術プロジェクト(有償業務不可) | Anthropic Consoleで申請(~5〜7日) | ⚠️ **APIクレジットのみ** — Proチャットでもなく、Claude Codeサブでもない。Opusで速く尽きる。旧URL `/for-student-builders` はリダイレクト — Console経由で申請 |
+| **Anthropic** Pro/Max 直接 ❌ | **なし。** Claude Pro/Maxに個人の学生割引なし([出典](https://felloai.com/claude-student-discount/)) | 学生の節約$0 | 該当なし | 該当なし | ⚠️ 「学生は50%off / Pro $10」の主張は **非公式/虚偽**。唯一の実質的節約は年額請求(~$17/月、全ユーザー)。共有アカウントのリセラーは避けること(ToS違反) |
+| **Mistral**(Le Chat / Vibe)💎 | **教育プラン $5.99/月**($14.99 Pro比)— 終日のCLI/IDEコーディング + Devstralエージェント込み([出典](https://mistral.ai/pricing)) | ~60%off、~$108節約 | 認定高等教育、**世界中**、新規アカウントのみ | **機関メール** 自動チェック(SheerIDなし)— 手動フォールバック | ⚠️ ハードな **12か月上限**、以後$14.99。新規アカウントのみ(既存ユーザーは不可)。「Le Chat」/「Vibe」/「Pro」は同一ティア |
+| **Perplexity** 💎 | **Education Pro $10/月**(50%off)+ 1か月無料、紹介で最大 **24か月無料** に積み上げ([出典](https://shop.sheerid.com/offers/50-off-perplexity-pro-for-students-and-educators/)) | 紹介経由で最大~$480 | SheerID対応校の学生 | SheerID | ⚠️ 旧「.eduで1年無料」は **終了**。紹介積み上げの締切は **2026年5月31日**(既に経過)。研究エンジンであって **コーディングエージェントではない** |
+| **Replit** ⚠️ | 学生:Core 50%off = **最初の6か月のみ$10/月**。教員:**無料** + 学生クレジット([出典](https://replit.com/edu/students)) | 学生~$90、教員~$240/年 | 学生:.eduメール。教員:認証済みインストラクター | 決済時の.edu / 教員申請 | ⚠️ **無料でも継続でもない** — 6か月の導入半額。クレジット従量制、Agentの多用で超過課金 |
+| **Windsurf**(→ Devin)⚠️ | 学生向けレガシー無料Pro — **状態不明**。ブランドはDevin/Cognitionに統合、学生URLはリダイレクト、Devinの価格に学生ティアなし([出典](https://devin.ai/pricing)) | 「尊重されれば$0、されなければなし」 | レガシー:.edu、認定 | エディタ内のレガシーSheerID | ⚠️ **当てにする前にアプリ内で確認** — アフィリエイトブログは古い可能性。移行のさなか |
+| **Tabnine** ❌ | **学生オファーなし、無料枠なし。** 有料のみ($39〜$59/月)([出典](https://www.tabnine.com/pricing/)) | なし | 該当なし | 該当なし | ⚠️ 旧「学生向け無料Pro」ガイドは古い/無効 |
+| **Phind** ❌ | **2026年1月16日に終了。** 廃止([出典](https://www.phind.com/plans)) | なし | 該当なし | 該当なし | ⚠️ 一部のレビューサイトはまだ旧価格を掲載 — もう存在しない |
+
+> 要点:**GitHub Copilot、JetBrains、Mistral** が最も世界的にアクセスしやすい(書類/メールベース)。**Cursor** は単体最良のフリー(~$240)だが北米優先。**ClaudeとOpenAI** の学生アクセスは機関ゲート付きか、下に有料プランが必要。
+
+### 認証の仕組み
+
+上のオファーのほぼすべては4つのゲートキーパーのいずれかを通る — これを覚えれば却下されなくなる:
+
+- **SheerID**(Cursor、Perplexity、OpenAI Codex、Googleの旧オファー、レガシーWindsurf)。2段階:**即時チェック**(氏名 + ドロップダウンの学校 + 生年月日 + 学術メールを在籍DBと照合)と、失敗時の **書類アップロード** フォールバック。重要な落とし穴:**SheerIDは書類の在籍日を読む、印刷日ではない** — 合格/入学許可書(将来の学期)は **却下**、*過去*の学期の成績証明も却下。氏名 + 学校名 + 現学期の日付が **1枚の画像にすべて見える** 現学期の時間割、授業料領収書、進行中の成績証明、または日付入り学生証が必要。3回失敗すると遅い手動サポートに固定される([出典](https://sheerid.zendesk.com/hc/en-us/articles/26408738570779-Student-Verification-FAQ))。
+- **GitHub Student Developer Pack** — 最もレバレッジの高い単一認証:1度の承認が無料Copilot Student、JetBrains、100以上のパートナーツールへ連鎖する。学校メールまたは日付入り証明、承認~5日。状態は最大2年、以後再認証(更新ボタンは失効 *後* にのみ解放)([出典](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student))。
+- **.edu / 機関メール** — 普遍的な高速パス。認識されれば数日のレビューが数秒の自動承認になる。汎用のGmailは決して通らない。Cursorは **アカウントのメールと認証のメールが一致** することを要求。JetBrains/GitHubはオープンソースのドメインリスト [`swot`](https://github.com/JetBrains/swot) を使う — 学校のドメインが未認識なら自分で送信可能。
+- **ISICカード**(~€4〜25)と **UNiDAYS** — バックアップ。SheerID/GitHubが学校を認識せず、使える機関メールもない場合のみISICを取得、JetBrainsは直接受け付ける。
+
+**一発で承認されるコツ:** 機関メールを使い、ベンダーアカウントのメールをそれと *一致* させる。学校はドロップダウンから選ぶ(手入力しない)。氏名/生年月日は学校の記録どおり正確に入力。鮮明で未切り抜き・**未編集**の画像をアップロード(加工に見えるファイルは自動却下)。メール1つ = オファー1つ。
+
+**ブートキャンプ / オンライン / 高校の注意:** SheerIDとGitHubは概して学位やディプロマを授与する認定機関を求める。**ブートキャンプは、その学校がGitHub Campus Programに参加している場合のみGitHub Packの対象。** JetBrainsは明示的に **1年超** の課程を要求し、大半の短期ブートキャンプを除外する。Cursorは高校ドメインと非.eduの学術ドメインを完全に却下する。
+
+### 認証できない(または$0の)場合の最良無料スタック
+
+.eduなし?地域違い?カードなし?それでも本当に使えるエージェントコーディング環境を **$0** で組める — 無料ハーネスを無料モデルエンドポイントに向ければよい。
+
+**背骨 — 無料モデルプロバイダ(すべてOpenAI互換、開始時カード不要):**
+
+- 🆓 **OpenRouter** — APIキー1つで~27の無料モデル(Qwen3-Coder 1Mコンテキスト、GLM-4.5-Air、gpt-oss-120b、Kimi K2.6)。無料上限は **50リクエスト/日**、**一度$10チャージすると恒久的に1000/日へ**($10を使い切っても上限は維持)。グローバル。([出典](https://openrouter.ai/docs/api/reference/limits))
+- 🆓 **ModelScope(Alibaba)** — 物量の王:900以上のモデルで **2,000呼び出し/日**、**Qwen3-Coder-480B** 含む。落とし穴:Alibaba Cloud(Aliyun)アカウントの紐付けが必要、レイテンシは中国CDN最適化。([出典](https://github.com/QwenLM/qwen-code))
+- 🆓 **Google AI Studio** — Gemini 2.5 Flashが **~1,500 RPD / 最大1M TPM** で無料 — 大きなコンテキスト読み込みの無料 *主力* に最適。Proは~50/日に制限。無料枠のプロンプトはGoogleのモデル学習に使われうる — 秘密情報は絶対に送らない。([出典](https://ai.google.dev/gemini-api/docs/rate-limits))
+- 🆓 **Cerebras**(高速:gpt-oss-120b、GLM-4.7、ただし~5 RPM)と **Groq**(高速な小型モデル、ただし極小の6〜12K TPM)— **速度/フォールバック** として使い、主力にはしない。([Cerebras](https://inference-docs.cerebras.ai/support/rate-limits) · [Groq](https://console.groq.com/docs/rate-limits))
+- 🆓 **NVIDIA Build / NIM**(~40 RPM、大型モデル)と **Cloudflare Workers AI**(10k Neurons/日 — **無料の埋め込み / コードベースRAG** に最適)。([NVIDIA](https://build.nvidia.com/) · [Cloudflare](https://developers.cloudflare.com/workers-ai/platform/pricing/))
+
+**ハーネス(無料、オープンソース):**
+
+- **Claude Code + [Claude-Code-Router](https://openrouter.ai/docs/cookbook/coding-agents/claude-code-integration)(ccr)** — 上記の無料エンドポイントへルーティングしてClaude Codeのワークフローを$0で得る。中核となる構成。
+- **OpenCode** — 75以上のプロバイダにネイティブ対応(ルーター不要)、エージェントベンチマークで最小のトークン消費。無料プロバイダをきれいに *混在* させるのに最適。
+- **Cline / Roo**(VS Code)と **Aider**(CLI、git対応)— 任意の無料キーを貼って使うだけ。
+
+> **推奨$0構成:** ModelScope Qwen3-Coder-480B(物量)を主力 → OpenRouter GLM-4.5-Air / NVIDIA(フォールバック)→ Cerebras/Groq(速度バースト)→ Cloudflare(埋め込み)、すべて **OpenCode** または **Claude Code via ccr** で駆動。ツール呼び出しの信頼性のため、エージェント調整済みモデル(GLM-Air、Qwen3-Coder、gpt-oss-120b)を優先。無料50/日は学習に十分、ModelScopeの2000/日は日常ドライバーになる。専有/秘密のコードは `:free` モデルバリアントに絶対送らない — ログや学習に使われうる。
+
+### 落とし穴 ⚠️
+
+- **登録停止は現実。** GitHub Copilotは **Pro/Pro+/Max *および* Studentの新規登録を2026年4月20日に全停止**(エージェント計算コストのため)。6月1日のchangelog時点でも *まだ* 停止中 — 2026年6月に新規認証した学生はPackは得るがCopilot Freeに着地。**4月20日より前**に有効化した学生はアクセス維持([出典](https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/))。
+- **自動更新の罠。** Cursorは無料1年後に **$20/月** で更新、Replitは **6か月** 後にフルCoreへ復帰、Googleの旧オファーは **$19.99/月** に自動転換。有効化した日にカレンダーへリマインダーを。
+- **米国限定 / 地域ロックのオファー。** Cursorは公式に「北米」で **インドを削除**、OpenAIのCodex $100は **US/Canada居住者のみ**、Claude for Educationはパートナー校ゲート付き(米英中心)。メール/書類ベースのオファー(**GitHub、JetBrains、Mistral**)はインド、東南アジア、中南米、アフリカでずっと信頼できる。
+- **学生ティアでのモデル降格。** **2026年3月12日** 以降、Copilot StudentはClaude Opus/SonnetやGPT-5.x-Codexを自分で選べなくなった — Autoモード経由で間接的にのみ届く(既定はHaiku)。目玉価値は今や *無制限補完* であって、プレミアムモデルチャットではない。
+- **「無料」はしばしば「割引」か「クレジット」。** Mistral/Perplexity/Replit/Windsurfは *割引*、OpenAI CodexとAnthropic Student Buildersは *クレジット付与*(Codexは消費に有料Plusが下に必要な可能性)。JetBrainsの無料Packは **IDEをカバー、継続的なAIはカバーしない**。
+- **失効と再認証。** GitHubは最大~2年で再認証、JetBrainsと大半のSheerIDオファーは **毎年**、Copilot Studentは **毎月** 再確認。卒業して死んだ.eduメールは更新を静かに壊しうる — 在籍証明を最新に保つこと。
+- **死んだ/廃止、SEOスパムは無視。** Googleの無料1年(2026年3月11日終了)、OpenAIの無料Plusプロモ(2025年5月終了)、Tabnineの学生プラン、**Phind**(2026年1月16日終了)はすべて消滅 — 多くのアフィリエイトブログはまだ宣伝している。Claude Pro/Maxの公式な個人学生割引は **存在しない**、それ向けの「学生コード」は偽物と見なすこと。
+- **決済の摩擦。** カード不要のパスは存在(GitHub、JetBrains、Mistral、Perplexity、Googleの学生レート)— カードがない場合に最適。インドでは24〜48hで返金される~₹2の一時的な認証課金に注意。最低年齢は通常16歳(インドは18歳)。
 
 ---
 
