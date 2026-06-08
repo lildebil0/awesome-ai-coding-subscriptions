@@ -318,7 +318,7 @@ Fixed monthly or quarterly plans that put a frontier-ish open-weight model behin
 - **[StepFun Step Plan](https://github.com/Alorse/cc-compatible-models)** — `$6.99`–`$99/mo`, 100–5,000 prompts/5h, CC-native. Price undercutter, models less battle-tested. ⭐3
 - **MiMo (Xiaomi)** — `$6`–`$100/mo` credit-based (60M–1.6B), CC-native (`api.xiaomimimo.com`), incl. multimodal Omni. Barely benchmarked. ⭐3
 - **Atlas Cloud** 💎 — `$10`/`$20`, 800k–1.8M credits/**day**, OpenAI-compat (Claude Code/Codex/OpenCode). Daily-credit model for autonomous agents. ⭐4
-- **Factory Droid** 💎 — from `$20/mo` token-based, frontier models (Claude/GPT/Gemini), rolling 5h/7d/30d windows. Notable "I canceled two $200 Max plans for Droid" story. ⭐4
+- **[Factory Droid](https://factory.ai/pricing)** 💎 — from `$20/mo` token-based, frontier models (Claude/GPT/Gemini), rolling 5h/7d/30d windows. Notable "I canceled two $200 Max plans for Droid" story. ⭐4
 
 
 ---
@@ -540,6 +540,7 @@ No .edu? Wrong region? No credit card? You can still run a genuinely capable age
 - **Claude Code + [Claude-Code-Router](https://openrouter.ai/docs/cookbook/coding-agents/claude-code-integration) (ccr)** — get the Claude Code workflow at $0 by routing it through the free endpoints above. The centerpiece build.
 - **OpenCode** — natively speaks 75+ providers (no router needed), lowest token consumption in agentic benchmarks. Best for cleanly *mixing* free providers.
 - **Cline / Roo** (VS Code) and **Aider** (CLI, git-aware) — paste any free key and go.
+- **[SoulForge](https://github.com/proxysoul/soulforge)** (CLI) — edits **AST symbols, not strings** (LSP + persistent code-graph, 21 providers, MCP, headless CI); claims ~50% fewer tokens via structure-awareness. Free/OSS, BYO keys — pairs with any gateway above. Novel but niche.
 
 > **Recommended $0 build:** ModelScope Qwen3-Coder-480B (volume) as primary → OpenRouter GLM-4.5-Air / NVIDIA (fallback) → Cerebras/Groq (speed bursts) → Cloudflare for embeddings, all driven by **OpenCode** or **Claude Code via ccr**. For tool-calling reliability, prefer agent-tuned models (GLM-Air, Qwen3-Coder, gpt-oss-120b). The 50/day free tiers are enough to learn; ModelScope's 2000/day makes it a daily driver. Never send proprietary/secret code to `:free` model variants — they may log or train on prompts.
 
@@ -613,6 +614,7 @@ A different category from the plans above: here you pay for **agent compute**, n
 - **[Chutes](https://chutes.ai/pricing)** 💎⚠️ ✅ — Base `$3` (300 req/day) · Plus `$10` (2,000/day) · Pro `$20` (5,000/day). GLM-5/Kimi/DeepSeek/MiniMax/Qwen, OpenAI-compat, TEE privacy. ⚠️ **Decentralized (Bittensor)** = variable latency/quality between nodes, no SLA, quantization drift, frontier models gated to $10+. Treat as hobby/non-critical, keep a fallback. ⭐5
 - **[NanoGPT](https://nano-gpt.com/pricing)** 💎 — true **pay-per-prompt** ($0.10 min, crypto-friendly), proprietary + open models. ⚠️ tool-call failures reported in coding agents (OpenCode). Better as chat/API than a hardcore coding backend. ⭐3
 - **[AgentRouter](https://agentrouter.org)** ⚠️ — ~$200 free credits, routes Claude/GPT-5/DeepSeek/Zhipu, works as a Claude Code backend. A real free-credit **on-ramp**, but a non-profit with opaque long-term policy. Trials only, not proprietary code. ⭐3
+- **[DevPass](https://devpass.llmgateway.io/pricing)** (LLMGateway.io) 💎⚠️ — flat-rate gateway: `$29`→$87 · `$79`→$237 · `$179`→$537/mo of usage (**~3× value**). 200+ models (Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro, GLM-4.7/Qwen3/Kimi K2.6), OpenAI **and** Anthropic-compat → Claude Code / OpenCode / SoulForge backend; metered in $, no hard request caps (premium models carry a weekly fair-use cap $10–140). ⚠️ **A 3× discount on frontier access = it is reselling first-party models** — same ToS/ban exposure and relay-death risk as the proxies below; deposit only what you'll spend. ⭐3
 
 ### ⚠️ Reseller-proxy risk (read before depositing)
 Relays like **PackyCode, YesCode, AnyRouter, EasyClaude, IKunCode, Cubence** reverse-proxy official Claude Max/Pro accounts (**ToS violation**) or aggregate keys. Hard data: Anthropic's 2025–2026 crackdown forced simultaneous price hikes across these, and **>60% of 2025 reverse-engineering relays died within 3 months**. AnyRouter is Scamadviser-flagged. The **universal community rule: only deposit what you need, never large sums** — balances evaporate when a relay dies, and Anthropic also bans the underlying-account users. Aggregator-routers (CometAPI, ElectronHub) are the safer middle (legitimately metered) but you still trust a middleman with your prompts.
@@ -1134,7 +1136,7 @@ Ratings are **relative within a lane**, not across the whole list — a ⭐5 fre
 Two streams, deliberately kept separate:
 
 1. **Facts** (price, limits, endpoints, context windows) — from **official pricing/docs pages**, linked inline as [source](https://example.com) so you can re-verify in one click.
-2. **Sentiment** (what's actually good, what burns people) — aggregated from **Reddit** (r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor), **Hacker News**, and neutral independent blogs (patshead, InfoWorld, serenitiesai). Sentiment shapes the ⭐ and the prose; it never silently overrides a vendor's stated number.
+2. **Sentiment** (what's actually good, what burns people) — aggregated from **Reddit** (r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor), **Hacker News**, and neutral independent blogs/comparison sites (patshead, InfoWorld, serenitiesai, [codingplan.fyi](https://www.codingplan.fyi/)). Sentiment shapes the ⭐ and the prose; it never silently overrides a vendor's stated number.
 
 Where the two disagree (e.g. advertised "no weekly limits" vs. reported hidden daily caps), **both are stated** and the gap is flagged with ⚠️.
 
