@@ -318,7 +318,7 @@ flowchart TD
 - **[StepFun Step Plan](https://github.com/Alorse/cc-compatible-models)** — `$6.99`–`$99/महीना`, 100–5,000 prompts/5h, CC-native। कीमत में कटौती करने वाला, मॉडल कम परखे हुए। ⭐3
 - **MiMo (Xiaomi)** — `$6`–`$100/महीना` credit-based (60M–1.6B), CC-native (`api.xiaomimimo.com`), मल्टीमॉडल Omni सहित। मुश्किल से बेंचमार्क किया गया। ⭐3
 - **Atlas Cloud** 💎 — `$10`/`$20`, 800k–1.8M credits/**दिन**, OpenAI-compat (Claude Code/Codex/OpenCode)। स्वायत्त एजेंट के लिए डेली-क्रेडिट मॉडल। ⭐4
-- **Factory Droid** 💎 — `$20/महीना` से token-based, फ्रंटियर मॉडल (Claude/GPT/Gemini), रोलिंग 5h/7d/30d विंडो। उल्लेखनीय "मैंने Droid के लिए दो $200 Max प्लान रद्द किए" वाली कहानी। ⭐4
+- **[Factory Droid](https://factory.ai/pricing)** 💎 — `$20/महीना` से token-based, फ्रंटियर मॉडल (Claude/GPT/Gemini), रोलिंग 5h/7d/30d विंडो। उल्लेखनीय "मैंने Droid के लिए दो $200 Max प्लान रद्द किए" वाली कहानी। ⭐4
 
 
 ---
@@ -540,6 +540,7 @@ $0 पहुँच जिस पर आप एक असली एजेंट �
 - **Claude Code + [Claude-Code-Router](https://openrouter.ai/docs/cookbook/coding-agents/claude-code-integration) (ccr)** — ऊपर के मुफ़्त एंडपॉइंट से रूट करके Claude Code वर्कफ़्लो $0 में पाएँ। केंद्रबिंदु बिल्ड।
 - **OpenCode** — नेटिव रूप से 75+ प्रोवाइडर से बात करता है (कोई राउटर नहीं), एजेंटिक बेंचमार्क में सबसे कम टोकन खपत। मुफ़्त प्रोवाइडरों को साफ़-सुथरे *मिलाने* के लिए सर्वश्रेष्ठ।
 - **Cline / Roo** (VS Code) और **Aider** (CLI, git-aware) — कोई भी मुफ़्त key चिपकाएँ और चलें।
+- **[SoulForge](https://github.com/proxysoul/soulforge)** (CLI) — **strings नहीं, AST symbols** एडिट करता है (LSP + persistent code-graph, 21 प्रोवाइडर, MCP, headless CI); structure-awareness से ~50% कम tokens का दावा। मुफ़्त/OSS, अपनी keys — ऊपर के किसी भी gateway के साथ जुड़ता है। नया पर niche।
 
 > **अनुशंसित $0 बिल्ड:** ModelScope Qwen3-Coder-480B (वॉल्यूम) प्राथमिक → OpenRouter GLM-4.5-Air / NVIDIA (फ़ॉलबैक) → Cerebras/Groq (स्पीड बर्स्ट) → embeddings के लिए Cloudflare, सब **OpenCode** या **Claude Code via ccr** से संचालित। tool-calling विश्वसनीयता के लिए, एजेंट-ट्यून्ड मॉडल (GLM-Air, Qwen3-Coder, gpt-oss-120b) को प्राथमिकता दें। 50/दिन मुफ़्त tier सीखने के लिए काफ़ी है; ModelScope का 2000/दिन इसे डेली ड्राइवर बनाता है। मालिकाना/गुप्त कोड कभी `:free` मॉडल वेरिएंट को न भेजें — वे prompts लॉग या उन पर प्रशिक्षित कर सकते हैं।
 
@@ -613,6 +614,7 @@ $0 पहुँच जिस पर आप एक असली एजेंट �
 - **[Chutes](https://chutes.ai/pricing)** 💎⚠️ ✅ — Base `$3` (300 req/दिन) · Plus `$10` (2,000/दिन) · Pro `$20` (5,000/दिन)। GLM-5/Kimi/DeepSeek/MiniMax/Qwen, OpenAI-compat, TEE प्राइवेसी। ⚠️ **Decentralized (Bittensor)** = नोड्स के बीच परिवर्तनशील latency/quality, कोई SLA नहीं, quantization drift, फ्रंटियर मॉडल $10+ पर गेटेड। शौक/गैर-महत्वपूर्ण की तरह लें, एक fallback रखें। ⭐5
 - **[NanoGPT](https://nano-gpt.com/pricing)** 💎 — सच्चा **pay-per-prompt** ($0.10 न्यूनतम, crypto-friendly), proprietary + ओपन मॉडल। ⚠️ कोडिंग एजेंट (OpenCode) में tool-call विफलताएँ रिपोर्ट हुईं। कठोर कोडिंग बैकएंड के बजाय chat/API के रूप में बेहतर। ⭐3
 - **[AgentRouter](https://agentrouter.org)** ⚠️ — ~$200 मुफ़्त credits, Claude/GPT-5/DeepSeek/Zhipu रूट करता है, Claude Code बैकएंड के रूप में काम करता है। एक असली free-credit **on-ramp**, पर एक non-profit जिसकी दीर्घकालिक नीति अपारदर्शी है। सिर्फ़ ट्रायल, proprietary कोड नहीं। ⭐3
+- **[DevPass](https://devpass.llmgateway.io/pricing)** (LLMGateway.io) 💎⚠️ — फ्लैट-रेट गेटवे: `$29`→$87 · `$79`→$237 · `$179`→$537/महीना उपयोग (**~3× वैल्यू**)। 200+ मॉडल (Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro, GLM-4.7/Qwen3/Kimi K2.6), OpenAI **और** Anthropic-compat → Claude Code / OpenCode / SoulForge बैकएंड; $ में मीटर्ड, कोई कठोर request सीमा नहीं (प्रीमियम मॉडल पर साप्ताहिक fair-use cap $10–140)। ⚠️ **फ्रंटियर पहुँच पर 3× छूट = यह first-party मॉडल रीसेल कर रहा है** — नीचे के प्रॉक्सी जैसा ही ToS/ban जोखिम + relay-मृत्यु जोखिम; उतना ही जमा करें जितना खर्च करेंगे। ⭐3
 
 ### ⚠️ Reseller-proxy जोखिम (जमा करने से पहले पढ़ें)
 **PackyCode, YesCode, AnyRouter, EasyClaude, IKunCode, Cubence** जैसे relays आधिकारिक Claude Max/Pro खातों को reverse-proxy करते हैं (**ToS उल्लंघन**) या keys एकत्रित करते हैं। ठोस डेटा: Anthropic की 2025–2026 की कार्रवाई ने इन सबमें एक साथ कीमत वृद्धि के लिए मजबूर किया, और **2025 के >60% reverse-engineering relays 3 महीने के भीतर मर गए**। AnyRouter Scamadviser-flagged है। **सार्वभौमिक कम्युनिटी नियम: सिर्फ़ उतना जमा करें जितनी ज़रूरत हो, बड़ी रकम कभी नहीं** — relay मरने पर बैलेंस वाष्पित हो जाता है, और Anthropic underlying-account उपयोगकर्ताओं को भी बैन करता है। Aggregator-routers (CometAPI, ElectronHub) सुरक्षित मध्य हैं (वैध रूप से metered) पर आप फिर भी अपने prompts के साथ एक बिचौलिए पर भरोसा करते हैं।
@@ -1134,7 +1136,7 @@ AI कोडिंग सब्सक्रिप्शन में नए? य
 दो धाराएँ, जानबूझकर अलग रखी गईं:
 
 1. **तथ्य** (कीमत, सीमाएँ, endpoints, context windows) — **आधिकारिक pricing/docs पेज** से, [source](https://example.com) के रूप में inline linked ताकि आप एक क्लिक में फिर से सत्यापित कर सकें।
-2. **भावना** (असल में क्या अच्छा है, क्या लोगों को जलाता है) — **Reddit** (r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor), **Hacker News**, और तटस्थ स्वतंत्र ब्लॉग (patshead, InfoWorld, serenitiesai) से एकत्रित। भावना ⭐ और गद्य को आकार देती है; यह कभी चुपचाप एक वेंडर के बताए आँकड़े को override नहीं करती।
+2. **भावना** (असल में क्या अच्छा है, क्या लोगों को जलाता है) — **Reddit** (r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor), **Hacker News**, और तटस्थ स्वतंत्र ब्लॉग (patshead, InfoWorld, serenitiesai, [codingplan.fyi](https://www.codingplan.fyi/)) से एकत्रित। भावना ⭐ और गद्य को आकार देती है; यह कभी चुपचाप एक वेंडर के बताए आँकड़े को override नहीं करती।
 
 जहाँ दोनों असहमत हों (जैसे विज्ञापित "कोई साप्ताहिक सीमा नहीं" बनाम रिपोर्टेड छिपी daily caps), **दोनों बताए जाते हैं** और अंतर ⚠️ से flag किया जाता है।
 

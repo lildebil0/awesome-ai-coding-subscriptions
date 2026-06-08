@@ -318,7 +318,7 @@ Feste Monats- oder Quartalspläne, die ein nahezu Frontier-fähiges Open-Weight-
 - **[StepFun Step Plan](https://github.com/Alorse/cc-compatible-models)** — `$6.99`–`$99/Monat`, 100–5.000 Prompts/5h, CC-native. Preisunterbieter, Modelle weniger kampferprobt. ⭐3
 - **MiMo (Xiaomi)** — `$6`–`$100/Monat` credit-basiert (60M–1,6B), CC-native (`api.xiaomimimo.com`), inkl. multimodalem Omni. Kaum gebenchmarkt. ⭐3
 - **Atlas Cloud** 💎 — `$10`/`$20`, 800k–1,8M Credits/**Tag**, OpenAI-compat (Claude Code/Codex/OpenCode). Tagescredit-Modell für autonome Agenten. ⭐4
-- **Factory Droid** 💎 — ab `$20/Monat` token-basiert, Frontier-Modelle (Claude/GPT/Gemini), rollende 5h/7d/30d-Fenster. Bemerkenswerte „Ich habe zwei $200-Max-Pläne für Droid gekündigt“-Story. ⭐4
+- **[Factory Droid](https://factory.ai/pricing)** 💎 — ab `$20/Monat` token-basiert, Frontier-Modelle (Claude/GPT/Gemini), rollende 5h/7d/30d-Fenster. Bemerkenswerte „Ich habe zwei $200-Max-Pläne für Droid gekündigt“-Story. ⭐4
 
 
 ---
@@ -541,6 +541,7 @@ Kein .edu? Falsche Region? Keine Karte? Du kannst trotzdem ein wirklich fähiges
 - **Claude Code + [Claude-Code-Router](https://openrouter.ai/docs/cookbook/coding-agents/claude-code-integration) (ccr)** — hol dir den Claude-Code-Workflow zu $0, indem du ihn über die Gratis-Endpoints oben routest. Das Herzstück.
 - **OpenCode** — spricht nativ mit 75+ Anbietern (kein Router), der niedrigste Token-Verbrauch in agentischen Benchmarks. Am besten zum sauberen *Mischen* von Gratis-Anbietern.
 - **Cline / Roo** (VS Code) und **Aider** (CLI, git-bewusst) — beliebigen Gratis-Key einfügen und los.
+- **[SoulForge](https://github.com/proxysoul/soulforge)** (CLI) — bearbeitet **AST-Symbole, keine Strings** (LSP + persistenter Code-Graph, 21 Anbieter, MCP, Headless-CI); beansprucht ~50 % weniger Tokens durch Struktur-Bewusstsein. Gratis/OSS, eigene Keys — passt zu jedem Gateway oben. Neuartig, aber nischig.
 
 > **Empfohlener $0-Build:** ModelScope Qwen3-Coder-480B (Volumen) als Primär → OpenRouter GLM-4.5-Air / NVIDIA (Fallback) → Cerebras/Groq (Speed-Bursts) → Cloudflare für Embeddings, alles gesteuert von **OpenCode** oder **Claude Code via ccr**. Für zuverlässiges Tool-Calling bevorzuge agentisch getunte Modelle (GLM-Air, Qwen3-Coder, gpt-oss-120b). Die Gratis-Tiers mit 50/Tag reichen zum Lernen; ModelScopes 2000/Tag machen es zum Daily Driver. Sende nie proprietären/geheimen Code an die `:free`-Modellvarianten — sie könnten Prompts loggen oder darauf trainieren.
 
@@ -614,6 +615,7 @@ Eine andere Kategorie als die Pläne oben: Hier zahlst du für **Agent-Compute**
 - **[Chutes](https://chutes.ai/pricing)** 💎⚠️ ✅ — Base `$3` (300 Req/Tag) · Plus `$10` (2.000/Tag) · Pro `$20` (5.000/Tag). GLM-5/Kimi/DeepSeek/MiniMax/Qwen, OpenAI-compat, TEE-Datenschutz. ⚠️ **Dezentral (Bittensor)** = variable Latenz/Qualität zwischen Nodes, kein SLA, Quantisierungs-Drift, Frontier-Modelle erst ab $10+. Als Hobby/unkritisch behandeln, einen Fallback bereithalten. ⭐5
 - **[NanoGPT](https://nano-gpt.com/pricing)** 💎 — echtes **Pay-per-Prompt** ($0.10 Min., krypto-freundlich), proprietäre + offene Modelle. ⚠️ Tool-Call-Fehler in Coding-Agenten gemeldet (OpenCode). Besser als Chat/API denn als hartes Coding-Backend. ⭐3
 - **[AgentRouter](https://agentrouter.org)** ⚠️ — ~$200 gratis Credits, routet Claude/GPT-5/DeepSeek/Zhipu, funktioniert als Claude-Code-Backend. Ein echter Gratis-Credit-**On-Ramp**, aber eine Non-Profit mit undurchsichtiger Langzeitpolitik. Nur Trials, kein proprietärer Code. ⭐3
+- **[DevPass](https://devpass.llmgateway.io/pricing)** (LLMGateway.io) 💎⚠️ — Flatrate-Gateway: `$29`→$87 · `$79`→$237 · `$179`→$537/Monat an Nutzung (**~3× Wert**). 200+ Modelle (Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro, GLM-4.7/Qwen3/Kimi K2.6), OpenAI- **und** Anthropic-kompatibel → Claude Code / OpenCode / SoulForge Backend; in $ abgerechnet, keine harten Request-Limits (Premium-Modelle haben ein wöchentliches Fair-Use-Limit von $10–140). ⚠️ **Ein 3×-Rabatt auf Frontier-Zugang = es verkauft First-Party-Modelle weiter** — dasselbe ToS/Bann-Risiko und Relay-Sterberisiko wie die Proxys unten; zahl nur ein, was du ausgibst. ⭐3
 
 ### ⚠️ Reseller-Proxy-Risiko (vor dem Einzahlen lesen)
 Relays wie **PackyCode, YesCode, AnyRouter, EasyClaude, IKunCode, Cubence** reverse-proxyen offizielle Claude-Max/Pro-Konten (**ToS-Verletzung**) oder aggregieren Keys. Harte Daten: Anthropics 2025–2026-Crackdown erzwang gleichzeitige Preiserhöhungen über diese hinweg, und **>60 % der 2025er-Reverse-Engineering-Relays starben innerhalb von 3 Monaten**. AnyRouter ist Scamadviser-geflaggt. Die **universelle Community-Regel: zahl nur ein, was du brauchst, nie große Summen** — Guthaben verdampfen, wenn ein Relay stirbt, und Anthropic bannt auch die Nutzer der zugrunde liegenden Konten. Aggregator-Router (CometAPI, ElectronHub) sind die sicherere Mitte (legitim abgerechnet), aber du vertraust trotzdem einem Middleman deine Prompts an.
@@ -1135,7 +1137,7 @@ Bewertungen sind **relativ innerhalb einer Spur**, nicht über die ganze Liste �
 Zwei Ströme, bewusst getrennt gehalten:
 
 1. **Fakten** (Preis, Limits, Endpunkte, Kontextfenster) — aus **offiziellen Preis-/Docs-Seiten**, inline als [Quelle](https://example.com) verlinkt, damit du in einem Klick neu verifizieren kannst.
-2. **Stimmung** (was wirklich gut ist, was die Leute verbrennt) — aggregiert aus **Reddit** (r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor), **Hacker News** und neutralen unabhängigen Blogs (patshead, InfoWorld, serenitiesai). Stimmung formt das ⭐ und die Prosa; sie überschreibt nie still eine vom Anbieter erklärte Zahl.
+2. **Stimmung** (was wirklich gut ist, was die Leute verbrennt) — aggregiert aus **Reddit** (r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor), **Hacker News** und neutralen unabhängigen Blogs (patshead, InfoWorld, serenitiesai, [codingplan.fyi](https://www.codingplan.fyi/)). Stimmung formt das ⭐ und die Prosa; sie überschreibt nie still eine vom Anbieter erklärte Zahl.
 
 Wo die beiden uneins sind (z. B. beworbene „keine Wochenlimits“ vs. berichtete versteckte Tages-Caps), werden **beide angegeben** und die Lücke mit ⚠️ geflaggt.
 

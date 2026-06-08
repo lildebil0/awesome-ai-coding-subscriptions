@@ -318,7 +318,7 @@ Plans fixes mensuels ou trimestriels qui placent un modèle à poids ouverts qua
 - **[StepFun Step Plan](https://github.com/Alorse/cc-compatible-models)** — `6,99 $`–`99 $/mois`, 100–5 000 prompts/5h, CC-native. Casseur de prix, modèles moins éprouvés. ⭐3
 - **MiMo (Xiaomi)** — `6 $`–`100 $/mois` basé sur crédits (60M–1,6B), CC-native (`api.xiaomimimo.com`), inclut le multimodal Omni. À peine benchmarké. ⭐3
 - **Atlas Cloud** 💎 — `10 $`/`20 $`, 800k–1,8M crédits/**jour**, OpenAI-compat (Claude Code/Codex/OpenCode). Modèle de crédits quotidiens pour les agents autonomes. ⭐4
-- **Factory Droid** 💎 — à partir de `20 $/mois` basé sur tokens, modèles frontière (Claude/GPT/Gemini), fenêtres glissantes 5h/7j/30j. Témoignage notable « j'ai annulé deux plans Max à 200 $ pour Droid ». ⭐4
+- **[Factory Droid](https://factory.ai/pricing)** 💎 — à partir de `20 $/mois` basé sur tokens, modèles frontière (Claude/GPT/Gemini), fenêtres glissantes 5h/7j/30j. Témoignage notable « j'ai annulé deux plans Max à 200 $ pour Droid ». ⭐4
 
 
 ---
@@ -540,6 +540,7 @@ Pas de .edu ? Mauvaise région ? Pas de carte ? Vous pouvez quand même faire to
 - **Claude Code + [Claude-Code-Router](https://openrouter.ai/docs/cookbook/coding-agents/claude-code-integration) (ccr)** — obtenez le flux Claude Code à 0 $ en le routant via les endpoints gratuits ci-dessus. La pièce maîtresse.
 - **OpenCode** — parle nativement à 75+ fournisseurs (pas de routeur), la plus faible consommation de tokens dans les benchmarks agentiques. Le meilleur pour *mélanger* proprement des fournisseurs gratuits.
 - **Cline / Roo** (VS Code) et **Aider** (CLI, conscient de git) — collez n'importe quelle clé gratuite et c'est parti.
+- **[SoulForge](https://github.com/proxysoul/soulforge)** (CLI) — édite des **symboles de l'AST, pas des chaînes** (LSP + code-graph persistant, 21 fournisseurs, MCP, CI headless) ; revendique ~50 % de tokens en moins via la conscience de structure. Gratuit/OSS, vos propres clés — s'associe à n'importe quelle passerelle ci-dessus. Inédit mais de niche.
 
 > **Build à 0 $ recommandé :** ModelScope Qwen3-Coder-480B (volume) en primaire → OpenRouter GLM-4.5-Air / NVIDIA (repli) → Cerebras/Groq (pics de vitesse) → Cloudflare pour les embeddings, le tout piloté par **OpenCode** ou **Claude Code via ccr**. Pour la fiabilité du tool-calling, préférez les modèles réglés pour l'agentique (GLM-Air, Qwen3-Coder, gpt-oss-120b). Les paliers gratuits de 50/jour suffisent pour apprendre ; les 2000/jour de ModelScope en font un driver quotidien. N'envoyez jamais de code propriétaire/secret aux variantes `:free` des modèles — elles peuvent journaliser ou s'entraîner sur les prompts.
 
@@ -613,6 +614,7 @@ Une catégorie différente des plans ci-dessus : ici vous payez pour du **comput
 - **[Chutes](https://chutes.ai/pricing)** 💎⚠️ ✅ — Base `3 $` (300 req/jour) · Plus `10 $` (2 000/jour) · Pro `20 $` (5 000/jour). GLM-5/Kimi/DeepSeek/MiniMax/Qwen, OpenAI-compat, confidentialité TEE. ⚠️ **Décentralisé (Bittensor)** = latence/qualité variables entre nœuds, pas de SLA, dérive de quantification, modèles frontière réservés au palier 10 $+. À traiter comme du hobby/non-critique, gardez un repli. ⭐5
 - **[NanoGPT](https://nano-gpt.com/pricing)** 💎 — vrai **paiement-au-prompt** (0,10 $ min, crypto-friendly), modèles propriétaires + ouverts. ⚠️ échecs d'appels d'outils rapportés dans les agents de codage (OpenCode). Mieux comme chat/API que comme backend de codage intensif. ⭐3
 - **[AgentRouter](https://agentrouter.org)** ⚠️ — ~200 $ de crédits gratuits, route Claude/GPT-5/DeepSeek/Zhipu, fonctionne comme backend Claude Code. Une vraie **rampe d'accès** à crédits gratuits, mais une association à but non lucratif à la politique long terme opaque. Essais seulement, pas de code propriétaire. ⭐3
+- **[DevPass](https://devpass.llmgateway.io/pricing)** (LLMGateway.io) 💎⚠️ — passerelle à tarif fixe : `$29`→$87 · `$79`→$237 · `$179`→$537/mois d'usage (**~3× valeur**). 200+ modèles (Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro, GLM-4.7/Qwen3/Kimi K2.6), compat OpenAI **et** Anthropic → backend Claude Code / OpenCode / SoulForge ; facturé en $, sans plafond dur de requêtes (les modèles premium ont un plafond hebdo d'usage équitable de 10–140 $). ⚠️ **Une remise de 3× sur l'accès frontière = il revend des modèles de première main** — même exposition ToS/ban et risque de mort du relais que les proxys ci-dessous ; ne déposez que ce que vous dépenserez. ⭐3
 
 ### ⚠️ Risque proxy-revendeur (à lire avant de déposer)
 Des relais comme **PackyCode, YesCode, AnyRouter, EasyClaude, IKunCode, Cubence** reverse-proxient des comptes Claude Max/Pro officiels (**violation des CGU**) ou agrègent des clés. Données dures : la répression d'Anthropic en 2025–2026 a forcé des hausses de prix simultanées chez tous, et **>60 % des relais de rétro-ingénierie de 2025 sont morts en 3 mois**. AnyRouter est signalé par Scamadviser. La **règle communautaire universelle : ne déposez que ce dont vous avez besoin, jamais de grosses sommes** — les soldes s'évaporent quand un relais meurt, et Anthropic bannit aussi les utilisateurs du compte sous-jacent. Les routeurs-agrégateurs (CometAPI, ElectronHub) sont le milieu plus sûr (facturés légitimement) mais vous confiez quand même vos prompts à un intermédiaire.
@@ -1134,7 +1136,7 @@ Les notes sont **relatives au sein d'une catégorie**, pas sur l'ensemble de la 
 Deux flux, délibérément gardés séparés :
 
 1. **Faits** (prix, quotas, endpoints, fenêtres de contexte) — issus des **pages tarifaires/docs officielles**, liées en ligne comme [source](https://example.com) pour que vous puissiez re-vérifier en un clic.
-2. **Sentiment** (ce qui est vraiment bon, ce qui brûle les gens) — agrégé depuis **Reddit** (r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor), **Hacker News**, et des blogs indépendants neutres (patshead, InfoWorld, serenitiesai). Le sentiment façonne le ⭐ et la prose ; il ne remplace jamais en silence un chiffre déclaré par un éditeur.
+2. **Sentiment** (ce qui est vraiment bon, ce qui brûle les gens) — agrégé depuis **Reddit** (r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor), **Hacker News**, et des blogs indépendants neutres (patshead, InfoWorld, serenitiesai, [codingplan.fyi](https://www.codingplan.fyi/)). Le sentiment façonne le ⭐ et la prose ; il ne remplace jamais en silence un chiffre déclaré par un éditeur.
 
 Là où les deux divergent (ex. « pas de limites hebdomadaires » annoncé vs plafonds quotidiens cachés rapportés), **les deux sont indiqués** et l'écart est signalé par ⚠️.
 

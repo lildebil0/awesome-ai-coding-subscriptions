@@ -321,7 +321,7 @@ flowchart TD
 - **[StepFun Step Plan](https://github.com/Alorse/cc-compatible-models)** —— `$6.99`–`$99/月`，100–5,000 prompts/5h，CC-native。价格杀手，模型经实战检验较少。⭐3
 - **MiMo（小米）** —— `$6`–`$100/月`基于额度（60M–1.6B），CC-native（`api.xiaomimimo.com`），含多模态 Omni。几乎没跑过基准。⭐3
 - **Atlas Cloud** 💎 —— `$10`/`$20`，800k–1.8M credits/**天**，OpenAI-compat（Claude Code/Codex/OpenCode）。面向自主 agent 的每日额度模式。⭐4
-- **Factory Droid** 💎 —— 从 `$20/月`起、基于 token，前沿模型（Claude/GPT/Gemini），滚动 5h/7d/30d 窗口。有名的「我为了 Droid 取消了两个 $200 的 Max 套餐」故事。⭐4
+- **[Factory Droid](https://factory.ai/pricing)** 💎 —— 从 `$20/月`起、基于 token，前沿模型（Claude/GPT/Gemini），滚动 5h/7d/30d 窗口。有名的「我为了 Droid 取消了两个 $200 的 Max 套餐」故事。⭐4
 
 
 ---
@@ -543,6 +543,7 @@ flowchart TD
 - **Claude Code + [Claude-Code-Router](https://openrouter.ai/docs/cookbook/coding-agents/claude-code-integration)（ccr）** —— 通过把它路由到上面的免费端点，$0 获得 Claude Code 工作流。核心搭建项。
 - **OpenCode** —— 原生支持 75+ 提供商（无需路由器），在 agentic 基准里 token 消耗最低。最适合干净地*混用*免费提供商。
 - **Cline / Roo**（VS Code）和 **Aider**（CLI、懂 git）—— 粘贴任意免费 key 即用。
+- **[SoulForge](https://github.com/proxysoul/soulforge)**（CLI）—— 编辑 **AST 符号而非字符串**（LSP + 持久代码图、21 个提供商、MCP、无头 CI）；宣称借助结构感知减少 ~50% token。免费/开源、自带 key —— 可与上面任意网关搭配。新颖但小众。
 
 > **推荐的 $0 搭建：**ModelScope Qwen3-Coder-480B（量）作主力 → OpenRouter GLM-4.5-Air / NVIDIA（兜底）→ Cerebras/Groq（速度突发）→ Cloudflare 做 embedding，全部由 **OpenCode** 或 **经 ccr 的 Claude Code** 驱动。为了工具调用的可靠性，优先用 agent 调优过的模型（GLM-Air、Qwen3-Coder、gpt-oss-120b）。每天 50 次的免费档够用来学习；ModelScope 的每天 2000 次让它成为日常主力。永远别把专有/机密代码发给 `:free` 模型变体 —— 它们可能记录或用 prompt 训练。
 
@@ -616,6 +617,7 @@ flowchart TD
 - **[Chutes](https://chutes.ai/pricing)** 💎⚠️ ✅ —— Base `$3`（300 req/天）· Plus `$10`（2,000/天）· Pro `$20`（5,000/天）。GLM-5/Kimi/DeepSeek/MiniMax/Qwen，OpenAI-compat，TEE 隐私。⚠️ **去中心化（Bittensor）** = 节点间延迟/质量波动、无 SLA、量化漂移、前沿模型门控到 $10+。当作业余/非关键用途，留好兜底。⭐5
 - **[NanoGPT](https://nano-gpt.com/pricing)** 💎 —— 真正的**按 prompt 付费**（$0.10 起、对加密货币友好），专有 + 开源模型。⚠️ 编程 agent（OpenCode）里有工具调用失败的报告。更适合当 chat/API，而非硬核编程后端。⭐3
 - **[AgentRouter](https://agentrouter.org)** ⚠️ —— 约 $200 免费额度，路由 Claude/GPT-5/DeepSeek/Zhipu，可作 Claude Code 后端。一个真实的免费额度**入口**，但是个长期政策不透明的非营利。仅供试用，别上专有代码。⭐3
+- **[DevPass](https://devpass.llmgateway.io/pricing)**（LLMGateway.io）💎⚠️ —— 统一定额网关：`$29`→$87 · `$79`→$237 · `$179`→$537/月 用量（**~3× 价值**）。200+ 模型（Claude Opus 4.7、GPT-5.5、Gemini 3.1 Pro、GLM-4.7/Qwen3/Kimi K2.6），OpenAI **和** Anthropic 兼容 → Claude Code / OpenCode / SoulForge 后端；按 $ 计量，无硬性请求上限（高级模型有每周公平使用上限 $10–140）。⚠️ **对前沿访问打 3× 折扣 = 它在转售第一方模型** —— 与下方代理相同的 ToS/封号风险 + 中继消亡风险；只充你会用掉的额度。⭐3
 
 ### ⚠️ 转售代理风险（充值前必读）
 像 **PackyCode、YesCode、AnyRouter、EasyClaude、IKunCode、Cubence** 这样的中转，反向代理官方 Claude Max/Pro 账号（**违反 ToS**）或聚合 key。硬数据：Anthropic 2025–2026 的整治迫使这些同时涨价，且 **2025 年逆向工程类中转 >60% 在 3 个月内死亡**。AnyRouter 被 Scamadviser 标记。**通用社区规则：只充你需要的、永不充大笔** —— 中转一死余额就蒸发，而且 Anthropic 还会封掉底层账号的用户。聚合路由器（CometAPI、ElectronHub）是更安全的中间地带（合法计量），但你仍要把 prompt 托付给一个中间商。
@@ -1137,7 +1139,7 @@ SWE-bench Verified（多为厂商自报；当作方向性参考 —— 存在污
 两条流，刻意分开：
 
 1. **事实**（价格、额度、端点、上下文窗口）—— 来自**官方定价/文档页**，以 [source](https://example.com) 内联链接，方便你一键重新核实。
-2. **口碑**（什么真好、什么坑人）—— 汇总自 **Reddit**（r/LocalLLaMA、r/ChatGPTCoding、r/ClaudeAI、r/cursor）、**Hacker News** 和中立独立博客（patshead、InfoWorld、serenitiesai）。口碑塑造 ⭐ 和正文；它从不静默地推翻厂商所述的数字。
+2. **口碑**（什么真好、什么坑人）—— 汇总自 **Reddit**（r/LocalLLaMA、r/ChatGPTCoding、r/ClaudeAI、r/cursor）、**Hacker News** 和中立独立博客（patshead、InfoWorld、serenitiesai、[codingplan.fyi](https://www.codingplan.fyi/)）。口碑塑造 ⭐ 和正文；它从不静默地推翻厂商所述的数字。
 
 当两者冲突时（如宣传「无每周限额」vs 报告的隐藏每日上限），**两者都陈述**，并用 ⚠️ 标出差距。
 

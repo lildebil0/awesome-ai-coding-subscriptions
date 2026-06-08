@@ -320,7 +320,7 @@ flowchart TD
 - **[StepFun Step Plan](https://github.com/Alorse/cc-compatible-models)** — `$6.99`〜`$99/月`、100〜5,000 プロンプト/5h、CC-native。価格の値下げ役だがモデルの実戦経験は浅い。⭐3
 - **MiMo(Xiaomi)** — `$6`〜`$100/月` クレジット制(60M〜1.6B)、CC-native(`api.xiaomimimo.com`)、マルチモーダルOmniを含む。ベンチがほとんどない。⭐3
 - **Atlas Cloud** 💎 — `$10`/`$20`、800k〜1.8M クレジット/**日**、OpenAI互換(Claude Code/Codex/OpenCode)。自律エージェント向けの日次クレジットモデル。⭐4
-- **Factory Droid** 💎 — `$20/月` から、トークン制、フロンティアモデル(Claude/GPT/Gemini)、5h/7d/30dのローリングウィンドウ。「Droidのために$200 Maxプランを2つ解約した」という逸話で有名。⭐4
+- **[Factory Droid](https://factory.ai/pricing)** 💎 — `$20/月` から、トークン制、フロンティアモデル(Claude/GPT/Gemini)、5h/7d/30dのローリングウィンドウ。「Droidのために$200 Maxプランを2つ解約した」という逸話で有名。⭐4
 
 
 ---
@@ -542,6 +542,7 @@ flowchart TD
 - **Claude Code + [Claude-Code-Router](https://openrouter.ai/docs/cookbook/coding-agents/claude-code-integration)(ccr)** — 上記の無料エンドポイントへルーティングしてClaude Codeのワークフローを$0で得る。中核となる構成。
 - **OpenCode** — 75以上のプロバイダにネイティブ対応(ルーター不要)、エージェントベンチマークで最小のトークン消費。無料プロバイダをきれいに *混在* させるのに最適。
 - **Cline / Roo**(VS Code)と **Aider**(CLI、git対応)— 任意の無料キーを貼って使うだけ。
+- **[SoulForge](https://github.com/proxysoul/soulforge)**(CLI)— **文字列ではなくASTシンボル**を編集(LSP + 永続コードグラフ、21プロバイダ、MCP、ヘッドレスCI)。構造認識でトークン~50%削減を謳う。無料/OSS、自前キー — 上記の任意のゲートウェイと組み合わせ可。斬新だがニッチ。
 
 > **推奨$0構成:** ModelScope Qwen3-Coder-480B(物量)を主力 → OpenRouter GLM-4.5-Air / NVIDIA(フォールバック)→ Cerebras/Groq(速度バースト)→ Cloudflare(埋め込み)、すべて **OpenCode** または **Claude Code via ccr** で駆動。ツール呼び出しの信頼性のため、エージェント調整済みモデル(GLM-Air、Qwen3-Coder、gpt-oss-120b)を優先。無料50/日は学習に十分、ModelScopeの2000/日は日常ドライバーになる。専有/秘密のコードは `:free` モデルバリアントに絶対送らない — ログや学習に使われうる。
 
@@ -615,6 +616,7 @@ flowchart TD
 - **[Chutes](https://chutes.ai/pricing)** 💎⚠️ ✅ — Base `$3`(300 req/日)· Plus `$10`(2,000/日)· Pro `$20`(5,000/日)。GLM-5/Kimi/DeepSeek/MiniMax/Qwen、OpenAI互換、TEEプライバシー。⚠️ **分散型(Bittensor)** = ノード間で可変のレイテンシ/品質、SLAなし、量子化のばらつき、フロンティアモデルは$10+にゲート。趣味/非重要として扱い、フォールバックを保持。⭐5
 - **[NanoGPT](https://nano-gpt.com/pricing)** 💎 — 真の **プロンプト単位課金**($0.10最低、暗号フレンドリー)、専有 + オープンモデル。⚠️ コーディングエージェント(OpenCode)でツール呼び出し失敗の報告あり。本格的なコーディングバックエンドよりチャット/APIとして良い。⭐3
 - **[AgentRouter](https://agentrouter.org)** ⚠️ — 約$200の無料クレジット、Claude/GPT-5/DeepSeek/Zhipuをルーティング、Claude Codeバックエンドとして機能。本物の無料クレジット **オンランプ** だが、長期方針が不透明な非営利。トライアルのみ、専有コードには使わない。⭐3
+- **[DevPass](https://devpass.llmgateway.io/pricing)**（LLMGateway.io）💎⚠️ — 定額ゲートウェイ: `$29`→$87 · `$79`→$237 · `$179`→$537/月の利用枠(**~3× value**)。200+モデル(Claude Opus 4.7、GPT-5.5、Gemini 3.1 Pro、GLM-4.7/Qwen3/Kimi K2.6)、OpenAI **および** Anthropic互換 → Claude Code / OpenCode / SoulForge バックエンド。$建てメータリング、ハードなリクエスト上限なし(プレミアムモデルは週次フェアユース上限 $10–140)。⚠️ **フロンティアアクセスの3×割引 = ファーストパーティモデルの転売** — 下記プロキシと同じToS/BANリスク+リレー消滅リスク。使う分だけ入金すること。⭐3
 
 ### ⚠️ リセラープロキシのリスク(入金前に読むこと)
 **PackyCode、YesCode、AnyRouter、EasyClaude、IKunCode、Cubence** のようなリレーは公式のClaude Max/Proアカウントをリバースプロキシする(**ToS違反**)か、キーを集約する。確固たるデータ:Anthropicの2025〜2026年の取り締まりがこれらに一斉値上げを強制し、**2025年のリバースエンジニアリングリレーの60%超が3か月以内に死んだ**。AnyRouterはScamadviserでフラグ。**普遍的なコミュニティのルール:必要な分だけ入金し、決して大金を入れない** — リレーが死ぬと残高が蒸発し、Anthropicは裏側のアカウントユーザーもBANする。アグリゲータルーター(CometAPI、ElectronHub)は安全な中間(正当に従量課金)だが、それでも仲介者にプロンプトを預けることになる。
@@ -1136,7 +1138,7 @@ AIコーディングサブスクは初めて? このリストの至る所に出�
 2つのストリームを、意図的に分けて:
 
 1. **事実**(価格、制限、エンドポイント、コンテキストウィンドウ)— **公式の価格/ドキュメントページ** から、[source](https://example.com) としてインラインリンク、ワンクリックで再検証できるように。
-2. **センチメント**(実際に何が良くて、何が人を焼くか)— **Reddit**(r/LocalLLaMA、r/ChatGPTCoding、r/ClaudeAI、r/cursor)、**Hacker News**、中立的な独立系ブログ(patshead、InfoWorld、serenitiesai)から集約。センチメントは ⭐ と散文を形作る、ベンダーの述べた数値を黙って上書きすることは決してない。
+2. **センチメント**(実際に何が良くて、何が人を焼くか)— **Reddit**(r/LocalLLaMA、r/ChatGPTCoding、r/ClaudeAI、r/cursor)、**Hacker News**、中立的な独立系ブログ(patshead、InfoWorld、serenitiesai、[codingplan.fyi](https://www.codingplan.fyi/))から集約。センチメントは ⭐ と散文を形作る、ベンダーの述べた数値を黙って上書きすることは決してない。
 
 2つが食い違うとき(例:宣伝された「週次制限なし」vs 報告された隠れた日次上限)、**両方が述べられ**、ギャップは ⚠️ でフラグされます。
 
