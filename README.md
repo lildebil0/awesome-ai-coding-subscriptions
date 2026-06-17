@@ -410,6 +410,8 @@ Genuinely useful entries that don't headline the main sections but fill real gap
 - **[Goose](https://github.com/aaif-goose/goose)** 💎 (Block / Linux Foundation) — free OSS agent that can **ride your existing Claude Max / ChatGPT / Copilot subscription** via SDK providers for flat-rate inference — the same BYO-subscription bridge pattern as `copilot-api` / `claude-code-router`.
 - **[Zencoder](https://zencoder.ai/pricing)** — SOC2 enterprise agent, multi-agent orchestration, "all features in every tier"; Pro $45/seat (30k credits) → Pro Max $195 (180k).
 - **[Tabby](https://www.tabbyml.com/pricing)** 💎 — leading **open-source self-hostable** completion/chat server (free, ~$5–15/mo GPU); Cloud Team $24/seat; new **Pochi** autonomous agent. OpenAI-compat endpoint usable from any harness.
+- **[Osaurus](https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/)** 💎 — native **macOS** harness that mixes local models (Gemma 4, Qwen3.6, Llama, DeepSeek V4) and cloud models (OpenAI, Anthropic, Gemini, xAI) in one sandboxed app, with 20+ native plugins. Open-source; ~112K downloads since its May 15 launch.
+- **[AWS Kiro](https://kiro.dev/)** — Amazon's **spec-first agentic IDE** (VS Code base), GA'd May 7 2026 as the ground-up successor to Amazon Q Developer and spotlighted at AWS Summit New York (Jun 17). Preview was free; GA pricing not yet confirmed.
 
 </details>
 
@@ -425,6 +427,7 @@ Genuinely useful entries that don't headline the main sections but fill real gap
 - **[Braintrust Gateway](https://www.braintrust.dev/)** 💎 — couples routing with **eval + tracing + caching**; OpenAI/Anthropic compat; generous free beta.
 - **[APIpie](https://apipie.ai/)** 💎 — a meta-router (aggregates OpenRouter/EdenAI/DeepInfra) with one key, 148 coding models, plus bundled web search + chat memory.
 - **[AIMLAPI](https://aimlapi.com/)** — 500+ models, OpenAI + Anthropic compat, up to ~80% under direct. **[Eden AI](https://www.edenai.co/pricing)** — BYOK-friendly, ~5.5% platform fee, free sandbox. **[TrueFoundry](https://www.truefoundry.com/ai-gateway)** (from $499/mo) and **[Kong AI Gateway](https://konghq.com/products/kong-ai-gateway)** (OSS free / Konnect cloud) — the self-hostable, on-prem-governance enterprise options.
+- **[Atlas Cloud Coding Plan](https://www.atlascloud.ai/coding-plan)** 💎 — unified LLM gateway with a flat coding sub: **Starter $10/mo** (800K credits/day), **Lite $20/mo** (1.8M/day), spanning DeepSeek V4 / Kimi K2 / GLM-5 / MiniMax M2 / Qwen3. Works with Claude Code, Codex, OpenCode, and any OpenAI-format tool; models priced up to ~50% under official API.
 
 </details>
 
@@ -915,7 +918,12 @@ The year the "unlimited" era ended. Every major coding subscription either re-pr
 | **May 22, 2026** | DeepSeek makes its **75% V4-Pro discount permanent** — input ~$1.74→$0.435, output ~$3.48→$0.87 per M tokens. Sets the API price floor for the year. ([source](https://apidog.com/blog/deepseek-v4-pro-permanent-price-cut/)) | 🟢🆓-ish floor |
 | **May 31, 2026** | **ChatGPT Pro $100 10× Codex promo expires** — settles to 5× Plus. If you subbed for the multiplier, this is the cliff. ([source](https://chatgpt.com/codex/pricing/)) | ⏳ promo ends |
 | **Jun 1, 2026** | GitHub Copilot moves all plans to **usage-based AI Credits** (1 credit = $0.01, billed on tokens). Monthly plans get a credit allotment matching the price; **annual subs stayed on legacy PRU billing** but saw model multipliers rise. Power users reported agentic bills jumping **10×–50×**. ([source](https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/)) | 🔄 re-meter (annual safe) |
+| **Jun 9, 2026** | Anthropic launches **Fable 5**, a new Claude-5-family model, available via the Claude API, Claude Code, and GitHub Copilot Pro+/Max/Business/Enterprise. ([source](https://www.developersdigest.tech/blog/best-ai-coding-tools-june-2026-post-fable5)) | 🆕 new frontier model |
+| **Jun 12, 2026** | Moonshot ships **Kimi K2.7-Code** — 1T MoE (32B active), 256K ctx, Modified-MIT — **+21.8%** over K2.6 on Kimi Code Bench v2 at ~30% fewer reasoning tokens; API **$0.95/$4.00** per M, Kimi Code Beta sub still ~$19/mo. A **HighSpeed** mode (~180 tok/s) followed Jun 15. ([source](https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/)) | 🟢 model bump |
+| **Jun 13, 2026** | **Z.ai GLM-5.2** — 744B MoE, **1M-token context**, MIT-licensed weights — ships on every GLM Coding Plan tier at no extra cost. Some sources report tiers re-cut to ~**$10/$30/$80** (from $18/$72/$160); verify before buying. ([source](https://codersera.com/blog/glm-5-2-release-1m-context-coding-2026/)) | 🟢 bump / ⚠️ price TBC |
+| **Jun 15, 2026** | Anthropic **retires** the legacy `claude-opus-4-20250514` and `claude-sonnet-4-20250514` snapshots (404 after this date) — move to `claude-opus-4-8` / `claude-sonnet-4-6`; **Opus 4.1** is deprecated, API retirement **Aug 5, 2026**. ([source](https://tygartmedia.com/claude-updates-june-2026/)) | 🔻 model lifecycle |
 | **Jun 18, 2026** | Google **shuts down Gemini CLI** for free/Pro/Ultra users — no grace period; any script calling `gemini` breaks. Replacement is the closed-source **Antigravity CLI** (no day-one feature parity). Enterprise Code Assist licenses unaffected. ([source](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)) | ☠️ killed |
+| **Jun 18, 2026** | **Google Antigravity CLI** goes live as the closed-source Gemini-CLI replacement — free tier (all models, ~5h quota refresh, no card), **AI Pro $20/mo**, **AI Ultra $249.99/mo**, PAYG $25 / 2,500 credits; roster spans Gemini 3.1 Pro / 3 Flash + Claude Sonnet 4.6 / Opus 4.6 + GPT-OSS 120B. ([source](https://vibecoding.app/blog/google-antigravity-pricing-2026)) | 🆕 replacement live |
 
 **Patterns worth internalizing:**
 - **Grandfathering is the rule, not the exception.** GLM, Qwen, Windsurf, and Copilot-annual all protected existing subscribers. Locking in *before* a hike is a real strategy.
@@ -935,6 +943,9 @@ Aggregated from r/LocalLLaMA, r/ChatGPTCoding, r/ClaudeAI, r/cursor, r/Anthropic
 - The common setup is to pair a frontier sub for hard work with a cheap open-weight plan for the overflow. The pair people name most often is Claude Pro at $20 plus GLM Lite at $10.
 - When someone posts "I canceled my $200 sub," they have usually moved to Factory's Droid.
 - On the skeptical side: Cerebras Code drew fire for advertising "2000 TPS / no weekly limits" while enforcing hidden daily token caps. People warn off sketchy reseller-proxy Claude keys, flag China-hosted plans on privacy, and get caught out by GLM's quarterly billing. OpenRouter stays the default "one key for everything," but flat-rate plans beat it for heavy daily use.
+- Windsurf is effectively gone as a brand: Cognition pushed a June 2 OTA update rebranding it to **Devin Desktop** (same editor, same Free / Pro $20 / Max $200 plans), and the community reads it as "Windsurf sold for pieces." **Cursor** — fresh off a ~$900M raise — remains the default IDE for people who don't want a terminal, while Claude Code owns the terminal/agentic lane.
+- The "$20 plan is a delusion" argument got loud in June: a widely-shared Hacker News thread ("The $15,000 AI Bill") pegs Claude Max at roughly $8K of tokens a month and argues heavy agentic users should stop pretending a flat $20 sub covers real agent loops.
+- The local-model story firmed up on r/LocalLLaMA around **Qwen 3.6-27B** (~24GB VRAM) and **Qwen 3.6-35B-A3B** (runs on less), with **DeepSeek V4-Flash** repeatedly cited as matching Claude Haiku on multi-file refactors at 1M context.
 
 
 ---
