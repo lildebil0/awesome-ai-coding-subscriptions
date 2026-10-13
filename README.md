@@ -376,6 +376,8 @@ One key across many providers. Pick a router as your **default access layer**.
 - **[CometAPI](https://www.cometapi.com/)** — 500+ models incl. latest proprietary, ~20–40% off official, **dual OpenAI+Anthropic compat**. Prepaid-credit middleman risk. ⭐4
 - **[ElectronHub](https://www.electronhub.ai/pricing)** — 600+ models, weekly credits can exceed cash cost; tight 5–10 RPM on cheap tiers, reseller-trust caveat. ⭐3
 - **[LiteLLM](https://docs.litellm.ai/)** — the OSS **self-host** standard (free, no markup) — see [integration tricks](#plugging-cheap-plans-into-your-harness). DIY infra, not turnkey. ⭐4
+- **[Standard Compute](https://standardcompute.com)** — `$19 / $39 / $89 / $249 per mo` (business tiers above). Models: smart-routed mix of closed frontier (Claude Opus/Sonnet 5.5, GPT-6, Gemini) and open-weight (GLM 5.3, Kimi K3, DeepSeek V4, Qwen 3.8, MiniMax M3), or pin up to 5 models. Limits: one monthly compute budget ($20 / $41 / $95 / $269; 1.5× in the first month), no 5h or weekly windows; requests stop with HTTP 402 at the budget, no overage. Starter runs one agent at a time. $0.25 no-card trial. Integration: OpenAI-compat (`https://api.stdcmpt.com/v1`) + Anthropic Messages (`ANTHROPIC_BASE_URL=https://api.stdcmpt.com`) = Claude Code drop-in; Codex CLI via the Responses API; OpenCode via models.dev.
+  *Flat monthly router that keeps closed frontier models in the mix, unlike the open-weight-only flat plans. Trade-offs: the router picks the model per request unless you pin one, and the budget is finite.* [pricing](https://standardcompute.com/pricing) · [docs](https://docs.standardcompute.com)
 
 
 ---
