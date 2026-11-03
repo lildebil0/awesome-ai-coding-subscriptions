@@ -375,6 +375,7 @@ One key across many providers. Pick a router as your **default access layer**.
 - **[Helicone Gateway](https://helicone.ai/pricing)** 🆓 — observability-first (auto logging/tracing/cost), zero markup, free 10k req/mo; subs $79/$799. ⭐3
 - **[CometAPI](https://www.cometapi.com/)** — 500+ models incl. latest proprietary, ~20–40% off official, **dual OpenAI+Anthropic compat**. Prepaid-credit middleman risk. ⭐4
 - **[ElectronHub](https://www.electronhub.ai/pricing)** — 600+ models, weekly credits can exceed cash cost; tight 5–10 RPM on cheap tiers, reseller-trust caveat. ⭐3
+- **[TheRouter.ai](https://therouter.ai/)** — Hosted pay-as-you-go gateway; for example, Claude Sonnet 4.6 is listed at $3.24/M input and $16.20/M output tokens (checked 2026-11-03). Integration: [OpenAI-compatible API](https://therouter.ai/docs/quickstart/) and [Claude Code setup](https://therouter.ai/docs/guides/guides/claude-code-integration/). Rates vary by model, and BYOK fees may apply; check the [pricing page](https://therouter.ai/pricing/) and account limits before use. ⚠️ Hosted gateway; independently verify routing and retention for your workload.
 - **[LiteLLM](https://docs.litellm.ai/)** — the OSS **self-host** standard (free, no markup) — see [integration tricks](#plugging-cheap-plans-into-your-harness). DIY infra, not turnkey. ⭐4
 
 
