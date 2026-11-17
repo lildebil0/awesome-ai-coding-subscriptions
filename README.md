@@ -262,6 +262,7 @@ Here the plan *is* the product — you buy into the vendor's editor/agent. The 2
 - **[Trae](https://www.trae.ai/pricing)** 💎🇨🇳 — Free · **Lite `$3`** · Pro `$10` · Ultra `$100`. ByteDance VS Code fork; usage pool exceeds sticker (e.g. $20 usage for $10) = "the $3 Cursor alternative." ⚠️ ByteDance telemetry shared with affiliates — enterprise dealbreaker. ⭐4
 - **[Sourcegraph Amp](https://sourcegraph.com/amp)** — Free to start ($10 credit; $40 for ex-Cody). Pure **consumption** (no monthly floor), runs Opus 4.8 in "smart" mode. Great for light use, uncapped-burn risk for heavy. Cody Free/Pro were retired into Amp. ⭐3
 - **[JetBrains AI / Junie](https://www.jetbrains.com/ai-ides/buy/)** — beloved IDE integration, but Junie **burns credits fast** (Ultimate's 35 credits gone in ~4–5 days). Only if you live in JetBrains.
+- **[Mel – the agentic terminal](https://www.openmel.dev)** — Free with your own API key · **Pro `$20`** · Max `$200`. The agentic team for coding: a multi-agent, multi-model AI terminal for macOS, Windows, Linux and VS Code, with configurable approvals. Proprietary.
 - **Overpriced / avoid:** **Tabnine** ($39 floor, no free tier, annual lock-in — only for on-prem/air-gap needs); **Windsurf Pro** (March 2026 swap to daily/weekly quotas is the year's most-complained-about change, post-Cognition trust low). **Supermaven** is dead as a standalone (folded into Cursor Tab Nov 2025).
 
 
